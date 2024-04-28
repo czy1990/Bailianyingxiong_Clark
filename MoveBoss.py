@@ -37,6 +37,7 @@ def move12教堂山谷Boss():
     moveUp()
     moveUp()
     moveUp()
+    moveUp()
     waitTimer(4)
 
 
