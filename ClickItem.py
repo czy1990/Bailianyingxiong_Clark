@@ -29,12 +29,16 @@ def click4严寒地带():
     u.waitTimer(1)
 
 
-def click5严寒地带():
+def click5冰冠堡垒():
     print("click5冰冠堡垒")
     u.click_point(30, 52)
     # 等1秒
     u.waitTimer(1)
 
+def click6幽魂之地():
+    u.click_point(30, 60)
+    # 等1秒
+    u.waitTimer(1.5)
 
 # 大目录-------end-------
 # 大目录-------end-------
@@ -128,3 +132,10 @@ def click51王座大厅():
     u.click传送阵()
     click4严寒地带()
     click子条目2()
+
+def click61寂静山谷():
+    print("click_6幽魂之地_1寂静山谷")
+    u.clickGoHome()
+    u.click传送阵()
+    click6幽魂之地()
+    click子条目1()
