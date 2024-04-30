@@ -158,7 +158,7 @@ def move41魔力之环Boss2():
     moveDown()
     moveDown()
     moveDown()
-    waitTimer(10)
+    waitTimer(15)
 
 
 def move42北风营地Boss():
@@ -181,4 +181,7 @@ def move42北风营地Boss():
     moveLeft()
     moveLeft()
     moveDown()
-    waitTimer(10)
+    moveRight()
+    waitTimer(1)
+    moveLeft()
+    waitTimer(20)
