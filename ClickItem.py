@@ -38,7 +38,7 @@ def click5冰冠堡垒():
 def click6幽魂之地():
     u.click_point(30, 60)
     # 等1秒
-    u.waitTimer(1.5)
+    u.waitTimer(3)
 
 # 大目录-------end-------
 # 大目录-------end-------
