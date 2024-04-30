@@ -5,35 +5,35 @@ def click1前哨平原():
     print("click1前哨平原")
     u.click_point(30, 20)
     # 等1秒
-    u.waitTimer(1)
+    u.waitTimer(2)
 
 
 def click2荒芜之地():
     print("click2荒芜之地")
     u.click_point(30, 28)
     # 等1秒
-    u.waitTimer(1)
+    u.waitTimer(2)
 
 
 def click3污染之林():
     print("click3污染之林")
     u.click_point(30, 35)
     # 等1秒
-    u.waitTimer(1)
+    u.waitTimer(2)
 
 
 def click4严寒地带():
     print("click4严寒地带")
     u.click_point(30, 43)
     # 等1秒
-    u.waitTimer(1)
+    u.waitTimer(2)
 
 
 def click5冰冠堡垒():
     print("click5冰冠堡垒")
     u.click_point(30, 52)
     # 等1秒
-    u.waitTimer(1)
+    u.waitTimer(2)
 
 def click6幽魂之地():
     u.click_point(30, 60)

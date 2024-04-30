@@ -28,7 +28,7 @@ def waitTimer(timer=defultTimer):
 def click传送阵():
     print("click传送阵")
     click_point(55, 40)
-    waitTimer(1)
+    waitTimer(4)
 
     # 回城
 
