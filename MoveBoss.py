@@ -78,8 +78,6 @@ def move32腐烂沼泽Boss1():
     moveUp()
     moveUp()
     moveUp()
-    moveUp()
-    moveUp()
     moveRight()
     moveRight()
     moveUp()
@@ -90,18 +88,14 @@ def move32腐烂沼泽Boss1():
     moveUp()
     moveUp()
     moveUp()
-    moveUp()
     moveRight()
     moveUp()
-    waitTimer(7)
+    waitTimer(5)
 
 
 def move32腐烂沼泽Boss2():
     print("move32腐烂沼泽Boss2")
     clickItem.click32腐烂沼泽()
-    moveLeft()
-    moveLeft()
-    moveLeft()
     moveLeft()
     moveLeft()
     moveLeft()
