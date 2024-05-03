@@ -1,13 +1,17 @@
 import uiautomator2 as u2
+import datetime
 
 # 手机像素宽：1440-1
 displayX = 1439
 # 手机像素高：2560-1
 displayY = 2559
 
+
 def init():
     global context  # 声明PI为全局变量
     context = u2.connect('127.0.0.1:7555')
+
+
 # 定义点击百分比, 输入比例， 0~100
 def click_point(x, y):
     clickX = x / 100 * displayX
@@ -67,3 +71,15 @@ def moveLeft():
 def moveRight():
     move_point(55, 80, 85, 80)
     waitTimer(0.3)
+
+
+def currentTime():
+    current_time = datetime.datetime.now()
+    formatted_time = current_time.strftime("%Y-%m-%d %H:%M:%S")
+    return formatted_time
+
+
+def timeDifference(lastTime):
+    difTime = datetime.datetime.now() - lastTime
+    formatted_time = difTime.strftime("%Y-%m-%d %H:%M:%S")
+    return formatted_time

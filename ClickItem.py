@@ -1,5 +1,6 @@
 import Utils as u
 
+
 # 大目录-------start-------
 def click1前哨平原():
     print("click1前哨平原")
@@ -35,10 +36,12 @@ def click5冰冠堡垒():
     # 等1秒
     u.waitTimer(2)
 
+
 def click6幽魂之地():
     u.click_point(30, 60)
     # 等1秒
     u.waitTimer(3)
+
 
 # 大目录-------end-------
 # 大目录-------end-------
@@ -133,9 +136,18 @@ def click51王座大厅():
     click4严寒地带()
     click子条目2()
 
+
 def click61寂静山谷():
     print("click_6幽魂之地_1寂静山谷")
     u.clickGoHome()
     u.click传送阵()
     click6幽魂之地()
     click子条目1()
+
+
+def click63哀嚎营地():
+    print("click_6幽魂之地_3哀嚎营地")
+    u.clickGoHome()
+    u.click传送阵()
+    click6幽魂之地()
+    click子条目3()
