@@ -131,10 +131,10 @@ def click42北风营地():
 
 def click51王座大厅():
     print("click_5冰冠堡垒_1王座大厅")
-    u.clickGoHome()
+    u.clickGoHome_确认()
     u.click传送阵()
-    click4严寒地带()
-    click子条目2()
+    click5冰冠堡垒()
+    click子条目1()
 
 
 def click61寂静山谷():

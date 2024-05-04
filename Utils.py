@@ -43,6 +43,14 @@ def clickGoHome():
     # 等9秒
     waitTimer(9)
 
+def clickGoHome_确认():
+    print("确认")
+    click_point(90, 90)
+    waitTimer(4)
+    click_point(60, 60)
+    # 等18秒
+    waitTimer(18)
+
 
 # 移动百分比, 输入比例， 0~100 # 从坐标(100, 200)滑动到(300, 400)
 def move_point(fx, fy, tx, ty):
