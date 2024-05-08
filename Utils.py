@@ -2,14 +2,26 @@ import uiautomator2 as u2
 import datetime
 
 # 手机像素宽：1440-1
-displayX = 1439
+# displayX = 720
+displayX = 1600
 # 手机像素高：2560-1
-displayY = 2559
+# displayY = 1280
+displayY = 2560
+
+isPad = False
 
 
-def init():
+def init(pad: bool):
     global context  # 声明PI为全局变量
-    context = u2.connect('127.0.0.1:7555')
+    global isPad
+    # context = u2.connect('127.0.0.1:7555')
+    context = u2.connect('a801ab2d')
+    isPad = pad
+    print("isPad:" + isPad.__str__())
+
+
+def isPad():
+    isPad()
 
 
 # 定义点击百分比, 输入比例， 0~100
@@ -29,27 +41,68 @@ def waitTimer(timer=defultTimer):
     context.sleep(timer)
 
 
+click传送阵Timer_Pad = 1.5
+click传送阵Timer = 3
+
+
 def click传送阵():
     print("click传送阵")
     click_point(55, 40)
-    waitTimer(6)
+    if isPad:
+        waitTimer(click传送阵Timer_Pad)
+    else:
+        waitTimer(click传送阵Timer)
 
-    # 回城
+
+# 回城
+GoHomeX_Pad = 90
+GoHomeY_Pad = 85
+GoHomeX = 90
+GoHomeY = 90
+
+GoHomeTimer_Pad = 9
+GoHomeTimer = 9
 
 
 def clickGoHome():
     print("回城")
-    click_point(90, 90)
+
+    if isPad:
+        click_point(GoHomeX_Pad, GoHomeY_Pad)
+    else:
+        click_point(GoHomeX, GoHomeY)
+
     # 等9秒
-    waitTimer(9)
+    if isPad:
+        waitTimer(GoHomeTimer_Pad)
+    else:
+        waitTimer(GoHomeTimer)
+
+
+clickGoHome_确认Timer_Pad = 1.5
+clickGoHome_确认Timer = 4
+clickGoHome_确认WatingTimer_Pad = 11
+clickGoHome_确认WatingTimer = 18
+
 
 def clickGoHome_确认():
     print("确认")
-    click_point(90, 90)
-    waitTimer(4)
+    if isPad:
+        click_point(GoHomeX_Pad, GoHomeY_Pad)
+    else:
+        click_point(GoHomeX, GoHomeY)
+
+    if isPad:
+        waitTimer(clickGoHome_确认Timer_Pad)
+    else:
+        waitTimer(clickGoHome_确认Timer)
+
     click_point(60, 60)
     # 等18秒
-    waitTimer(18)
+    if isPad:
+        waitTimer(clickGoHome_确认WatingTimer_Pad)
+    else:
+        waitTimer(clickGoHome_确认WatingTimer)
 
 
 # 移动百分比, 输入比例， 0~100 # 从坐标(100, 200)滑动到(300, 400)
@@ -63,22 +116,49 @@ def move_point(fx, fy, tx, ty):
 
 def moveUp():
     move_point(50, 85, 50, 55)
-    waitTimer(0.3)
+
+
+def moveUpHalf():
+    move_point(50, 85, 50, 70)
 
 
 def moveDown():
     move_point(50, 55, 50, 85)
-    waitTimer(0.3)
+
+
+def moveDownHalf():
+    move_point(50, 70, 50, 85)
 
 
 def moveLeft():
     move_point(55, 80, 25, 80)
-    waitTimer(0.3)
+
+
+def moveLeftHalf():
+    move_point(55, 80, 40, 80)
 
 
 def moveRight():
     move_point(55, 80, 85, 80)
-    waitTimer(0.3)
+
+
+def moveRightHalf():
+    move_point(55, 80, 70, 80)
+
+
+
+def moveLeftUp():
+    move_point(60, 60, 40, 40)
+
+def moveLeftDown():
+    move_point(60, 40, 40, 60)
+
+def moveRightUp():
+    move_point(40, 60, 60, 40)
+def moveRightDown():
+    move_point(40, 40, 60, 60)
+def devicesInfo():
+    print(context.window_size())
 
 
 def currentTime():

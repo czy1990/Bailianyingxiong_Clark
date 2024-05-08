@@ -14,19 +14,49 @@ def moveUp():
     u.moveUp()
 
 
+def moveUpHalf():
+    u.moveUpHalf()
+
+
 def moveDown():
     u.moveDown()
+
+
+def moveDownHalf():
+    u.moveDownHalf()
 
 
 def moveLeft():
     u.moveLeft()
 
 
+def moveLeftHalf():
+    u.moveLeftHalf()
+
+
 def moveRight():
     u.moveRight()
 
 
-# ---------------------
+def moveRightHalf():
+    u.moveRightHalf()
+
+
+def moveLeftUp():
+    u.moveLeftUp()
+
+
+def moveLeftDown():
+    u.moveLeftDown()
+
+
+def moveRightUp():
+    u.moveRightUp()
+
+
+def moveRightDown():
+    u.moveRightDown()
+
 
 def move41寒风营地UpLevel():
     print("move41寒风营地UpLevel")
@@ -99,94 +129,101 @@ def move41寒风营地UpLevel():
     waitTimer()
 
 
+timer61 = 1.5
+
+
 def move61寂静山谷UpLevelWood():
     print("move61寂静山谷UpLevelWood")
     clickItem.click61寂静山谷()
     moveDown()
     moveDown()
-    waitTimer(1)
+    waitTimer(timer61)
     moveLeft()
     moveDown()
     moveLeft()
-    waitTimer(1)
+    waitTimer(timer61)
     moveLeft()
     moveDown()
     moveDown()
-    waitTimer(1)
+    waitTimer(timer61)
     moveLeft()
     moveLeft()
-    waitTimer(1)
+    waitTimer(timer61)
     moveDown()
     moveLeft()
     moveLeft()
     moveDown()
-    waitTimer(1)
+    waitTimer(timer61)
     moveDown()
     moveLeft()
     moveLeft()
-    waitTimer(1)
+    waitTimer(timer61)
     moveLeft()
     moveLeft()
     moveDown()
     moveLeft()  # 到拐角了
-    waitTimer(1)
+    waitTimer(timer61)
 
     moveDown()
     moveDown()
     moveRight()
-    waitTimer(1)
+    waitTimer(timer61)
     moveRight()
     moveRight()
-    waitTimer(1)
+    waitTimer(timer61)
     moveDown()
     moveRight()
     moveRight()
-    waitTimer(1)  # 小亭子
+    waitTimer(timer61)  # 小亭子
 
     moveDown()
     moveRight()
     moveRight()
-    waitTimer(1)
+    waitTimer(timer61)
 
     moveDown()
     moveDown()
     moveRight()
-    waitTimer(1)
+    waitTimer(timer61)
     moveDown()
     moveRight()
     moveRight()
     moveDown()
+    waitTimer(timer61)
     moveRight()
-    waitTimer(1)
     moveRight()
     moveDown()
     moveRight()
+    waitTimer(timer61)
     moveRight()
-    waitTimer(1)
     moveUp()
     moveRight()
+    waitTimer(timer61)
     moveRight()
     moveRight()
     moveRight()
     moveUp()
     moveUp()  #右侧是墓碑
-    waitTimer(1)
+    waitTimer(timer61)
     moveRight()
     moveRight()
     moveRight()
     moveUp()
-    waitTimer(1)
+    waitTimer(timer61)
     moveRight()
     moveRight()
     moveUp()
     moveLeft()
     moveUp()
     moveUp()
-    waitTimer(1)
+    waitTimer(timer61)
     moveUp()
     moveUp()
     moveUp()
-    waitTimer(1)
+    waitTimer(timer61)
+
+
+timer63 = 2
 
 
 def move63哀嚎营地UpLevel():
@@ -197,63 +234,63 @@ def move63哀嚎营地UpLevel():
     moveUp()
     moveUp()
     moveUp()
-    waitTimer()
+    waitTimer(timer63)
     moveRight()
     moveUp()
     moveUp()
-    waitTimer()
+    waitTimer(timer63)
     moveUp()
     moveUp()
     moveUp()
     moveRight()
-    waitTimer()
+    waitTimer(timer63)
     moveRight()
     moveUp()
     moveUp()
-    waitTimer()
+    waitTimer(timer63)
     moveRight()
     moveRight()
     moveDown()
-    waitTimer()
+    waitTimer(timer63)
     moveDown()
     moveRight()
-    waitTimer(2)
+    waitTimer(timer63)
     moveDown()
     moveDown()
-    waitTimer(2)
+    waitTimer(timer63)
     moveRight()
     moveRight()
     moveRight()
-    waitTimer()
+    waitTimer(timer63)
     moveUp()
     moveRight()
     moveUp()
     moveUp()
-    waitTimer(2)  # 最右侧
+    waitTimer(timer63)  # 最右侧
 
     moveLeft()
     moveLeft()
     moveUp()
     moveLeft()
     moveUp()
-    waitTimer(2)
+    waitTimer(timer63)
 
     moveLeft()
     moveLeft()
     moveLeft()
     moveUp()
-    waitTimer(2)
+    waitTimer(timer63)
 
     moveLeft()
     moveLeft()
     moveUp()
     moveUp()
-    waitTimer(2)
+    waitTimer(timer63)
 
     moveLeft()
     moveLeft()
     moveLeft()
-    waitTimer(2)
+    waitTimer(timer63)
     moveLeft()
     moveDown()
     moveDown()
@@ -261,40 +298,136 @@ def move63哀嚎营地UpLevel():
     moveLeft()
     moveDown()
 
-    waitTimer(2)
+    waitTimer(timer63)
     moveLeft()
     moveLeft()
     moveLeft()
     moveDown()
-    waitTimer(2)  # 猪
+    waitTimer(timer63)  # 猪
 
     moveDown()
     moveDown()
     moveLeft()
-    waitTimer(2)
+    waitTimer(timer63)
 
     moveLeft()
     moveLeft()
     moveLeft()
     moveUp()
-    waitTimer(2)
+    waitTimer(timer63)
 
     moveLeft()
     moveDown()
     moveLeft()
-    waitTimer(2)
+    waitTimer(timer63)
     moveLeft()
     moveUp()
     moveUp()
     moveUp()
-    waitTimer(2)  # 最左侧
+    waitTimer(timer63)  # 最左侧
 
     moveRight()
     moveRight()
     moveRight()
     moveUp()
-    waitTimer()
+    waitTimer(timer63)
     moveRight()
     moveUp()
     moveRight()
-    waitTimer(2)
+    waitTimer(timer63)
+
+
+timer72 = 2
+
+
+def move72制热哨站UpLevel():
+    print("move72制热哨站UpLevel")
+    # moveRightDown()
+    # moveRightUp()
+    # moveLeftDown()
+    # moveLeftUp()
+
+    clickItem.click72炽热哨站()
+    moveUp()
+    moveRight()
+    moveRight()
+    moveRight()
+    moveDown()
+    moveDown()
+    moveRight()
+    moveDown()
+    moveRight()
+    moveRight()
+    moveUp()
+    moveRight()
+    moveUp()  #到怪区域了
+    moveUp()
+
+    waitTimer(timer72)
+
+    moveUp()
+    moveUp()
+
+    moveUp()
+    moveRight()
+    moveRight()
+    waitTimer(timer72)
+    moveRight()
+    moveRight()
+
+    moveRight()
+    waitTimer(timer72)
+    moveRightUp()
+    moveRightDown()
+    moveRightDown()
+
+    moveDown()
+    moveRightHalf()  #  过桥了
+
+    waitTimer(timer72)
+    moveRight()
+    moveRight()
+    moveRight()
+    waitTimer(timer72)
+    waitTimer(timer72)
+
+    moveDown()
+    moveDownHalf()
+    moveRightDown()  # 第二个桥
+
+    moveRightDown()
+    waitTimer(timer72)
+    moveDown()
+    moveDown()
+
+    moveLeft()
+    moveDown()
+    waitTimer(timer72)
+
+    moveDown()
+    moveRightHalf()
+    moveRight()
+    moveDown()
+    moveDown()  # 到达怪最多的地方
+    waitTimer(timer72)
+    waitTimer(timer72)
+    #
+    moveLeft()
+    moveLeft()
+    moveUpHalf()
+    moveLeft()
+    moveLeft()
+    moveUp()
+    waitTimer(timer72)
+    moveUp()
+
+    moveLeft()
+    moveLeft()
+    moveUpHalf()
+    waitTimer(timer72)
+    moveLeftHalf()
+    moveUpHalf()
+    moveLeftHalf()
+    moveUpHalf()
+    moveLeftHalf()
+    waitTimer(timer72)

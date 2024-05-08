@@ -9,7 +9,7 @@ import MoveResource as moveResource
 # 1，出城
 # 2. 回城
 # -------------------------------------------------
-u.init()
+u.init(True)
 
 
 def click刷钱1_3():
@@ -39,12 +39,14 @@ def getUpLevel():
     while True:  # 这将创建一个无限循环
         count += 1
         print("------循环次数:" + str(count) + "当前时间" + u.currentTime())
-        if count < 33:  # n 此以下执行此函数
-            moveResource.move42寒风营地Diamond()
-            #moveLevel.move61寂静山谷UpLevelWood()
-            #moveLevel.move61寂静山谷UpLevelWood()
+        if count < 1:  # n 此以下执行此函数
+           # moveResource.move42寒风营地Diamond()
+           #  moveLevel.move61寂静山谷UpLevelWood()
+           #  moveLevel.move61寂静山谷UpLevelWood()
+            moveResource.move51王座大厅Wood()
         else:
-            moveLevel.move63哀嚎营地UpLevel()
+            moveLevel.move72制热哨站UpLevel()
+            # moveLevel.move63哀嚎营地UpLevel()
 
 
 def getUpBoss():
@@ -70,3 +72,4 @@ def getUpBoss():
 
 getUpLevel()
 # getUpBoss()
+# moveLevel.move72制热哨站UpLevel()
