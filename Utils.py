@@ -41,7 +41,7 @@ def waitTimer(timer=defultTimer):
     context.sleep(timer)
 
 
-click传送阵Timer_Pad = 1.5
+click传送阵Timer_Pad = 2
 click传送阵Timer = 3
 
 

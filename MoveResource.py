@@ -47,7 +47,7 @@ def move22双峰山谷_钻石():
     move_point(50, 80, 50, 110)
     waitTimer(4)
 
-
+timer42 = 1
 def move42寒风营地Diamond():
     print("move42寒风营地Diamond")
     clickItem.click42北风营地()
@@ -55,37 +55,37 @@ def move42寒风营地Diamond():
     moveLeft()
     moveDown()
     moveDown()
-    waitTimer(1)
+    waitTimer(timer42)
     moveLeft()
     moveLeft()
     moveLeft()
     moveLeft()
-    waitTimer(1)
+    waitTimer(timer42)
     moveLeft()
     moveLeft()
-    waitTimer(1)
+    waitTimer(timer42)
     moveDown()
     moveLeft()
     moveDown()
     moveDown()
-    waitTimer(1)
+    waitTimer(timer42)
     moveUp()
     moveUp()
     moveLeft()
     moveLeft()
-    waitTimer(1)
+    waitTimer(timer42)
     moveUp()
     moveUp()
     moveUp()
     moveUp()
-    waitTimer(1)
+    waitTimer(timer42)
     moveLeft()
     moveLeft()
-    waitTimer(1)
+    waitTimer(timer42)
     moveUp()
     moveUp()
     moveUp()
-    waitTimer(1)
+    waitTimer(timer42)
     moveLeft()
     moveDown()
     moveDown()
@@ -93,15 +93,20 @@ def move42寒风营地Diamond():
     moveLeft()
     moveLeft()
     moveLeft()
-    waitTimer(1)
+    waitTimer(timer42)
     moveDown()
     moveDown()
-    waitTimer(1)
+    waitTimer(timer42)
 
-timer51 = 2
+
+timer51 = 1.5
+
+
 def move51王座大厅Wood():
     print("move51王座大厅Wood")
     clickItem.click51王座大厅()
+    waitTimer(timer51)
+    waitTimer(timer51)
     moveLeft()
     moveUp()
     moveLeft()
@@ -112,13 +117,13 @@ def move51王座大厅Wood():
     moveRight()
     moveUp()
     moveRight()
-    moveUp()
     waitTimer(timer51)
     moveUp()
-    moveUp() # 门拐角
-
+    moveUp()
+    moveUp()  # 门拐角
 
     moveRight()
+    waitTimer(timer51)
     moveUp()
     moveRight()
     moveRight()
@@ -126,7 +131,8 @@ def move51王座大厅Wood():
     waitTimer(timer51)
     moveUp()
     moveLeft()
-    moveUp() #桌子
+    moveUp()  #桌子
+    waitTimer(timer51)
 
     moveLeft()
     moveLeft()
@@ -137,7 +143,7 @@ def move51王座大厅Wood():
     moveLeft()
     moveDown()
     waitTimer(timer51)
-    moveDown() #第二个门
+    moveDown()  #第二个门
 
     moveLeft()
     moveDown()
@@ -150,28 +156,30 @@ def move51王座大厅Wood():
 
     moveLeft()
     moveDown()
-    waitTimer(timer51) # 平台
+    waitTimer(timer51)  # 平台
 
-    moveDown()
     moveDown()
     moveDown()
     moveDown()
     waitTimer(timer51)
+    moveDown()
 
     moveLeft()
     moveLeft()
     moveDown()
+    waitTimer(timer51)
     moveLeft()
-    moveDown()
     moveDown()
     moveDown()
     moveDown()
     waitTimer(timer51)
-    moveDown() # 第二个门
+    moveDown()
+    moveDown()  # 第二个门
 
     moveLeft()
     moveDown()
     moveLeft()
+    waitTimer(timer51)
     moveLeft()
     moveDown()
     moveLeft()
@@ -182,23 +190,25 @@ def move51王座大厅Wood():
     moveLeft()
     moveLeft()
     moveUp()
+    waitTimer(timer51)
     moveUp()
+    moveLeft()
     moveLeft()
     moveLeft()
     waitTimer(timer51)
 
-    moveLeft()
     moveUp()
     moveLeft()
     moveUp()
+    waitTimer(timer51)
     moveLeft()
     moveUp()
     moveLeft()
     moveLeft()
+    waitTimer(timer51)
     moveUp()
 
     moveLeft()
     moveLeft()
     moveUp()
     waitTimer(timer51)
-

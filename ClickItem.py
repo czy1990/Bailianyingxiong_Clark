@@ -1,6 +1,6 @@
 import Utils as u
 
-clickWaitTimer_Pad = 1
+clickWaitTimer_Pad = 1.5
 clickWaitTimer = 2
 # 大目录-------start-------
 def click1前哨平原():
@@ -190,7 +190,7 @@ def click63哀嚎营地():
 
 
 def click72炽热哨站():
-    print("click_7燃烧平原_2制热哨站")
+    print("click_7燃烧平原_2哨站")
     u.clickGoHome()
     u.click传送阵()
     click7燃烧平原()

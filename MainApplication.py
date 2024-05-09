@@ -39,11 +39,11 @@ def getUpLevel():
     while True:  # 这将创建一个无限循环
         count += 1
         print("------循环次数:" + str(count) + "当前时间" + u.currentTime())
-        if count < 1:  # n 此以下执行此函数
-           # moveResource.move42寒风营地Diamond()
+        if count < 50:  # n 此以下执行此函数
+            moveResource.move42寒风营地Diamond()
+            # moveResource.move51王座大厅Wood()
            #  moveLevel.move61寂静山谷UpLevelWood()
            #  moveLevel.move61寂静山谷UpLevelWood()
-            moveResource.move51王座大厅Wood()
         else:
             moveLevel.move72制热哨站UpLevel()
             # moveLevel.move63哀嚎营地UpLevel()

@@ -359,13 +359,13 @@ def move72制热哨站UpLevel():
     moveRight()
     moveRight()
     moveUp()
-    moveRight()
-    moveUp()  #到怪区域了
-    moveUp()
-
+    moveRight() #到怪区域了
     waitTimer(timer72)
 
     moveUp()
+    moveUp()
+    moveUp()
+    waitTimer(timer72)
     moveUp()
 
     moveUp()
@@ -383,35 +383,39 @@ def move72制热哨站UpLevel():
 
     moveDown()
     moveRightHalf()  #  过桥了
-
-    waitTimer(timer72)
-    moveRight()
-    moveRight()
-    moveRight()
-    waitTimer(timer72)
     waitTimer(timer72)
 
+    moveRight()
+    moveUp()
+    moveRight()
+    waitTimer(timer72)
+    moveRight()
     moveDown()
-    moveDownHalf()
-    moveRightDown()  # 第二个桥
+    waitTimer(timer72)
+
+    moveRightHalf()
+    moveDown()
+    moveDown()
+    moveDown()  # 第二个桥
 
     moveRightDown()
     waitTimer(timer72)
     moveDown()
     moveDown()
+    waitTimer(timer72)
 
     moveLeft()
     moveDown()
+    moveDown()
     waitTimer(timer72)
 
-    moveDown()
     moveRightHalf()
     moveRight()
     moveDown()
     moveDown()  # 到达怪最多的地方
     waitTimer(timer72)
     waitTimer(timer72)
-    #
+
     moveLeft()
     moveLeft()
     moveUpHalf()
@@ -426,8 +430,8 @@ def move72制热哨站UpLevel():
     moveUpHalf()
     waitTimer(timer72)
     moveLeftHalf()
-    moveUpHalf()
     moveLeftHalf()
     moveUpHalf()
     moveLeftHalf()
+    waitTimer(timer72)
     waitTimer(timer72)
