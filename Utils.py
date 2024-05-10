@@ -46,7 +46,7 @@ click传送阵Timer = 3
 
 
 def click传送阵():
-    print("click传送阵")
+    # print("click传送阵")
     click_point(55, 40)
     if isPad:
         waitTimer(click传送阵Timer_Pad)
@@ -97,6 +97,7 @@ def clickGoHome_确认():
     else:
         waitTimer(clickGoHome_确认Timer)
 
+    # 点击 确认 的位置
     click_point(60, 60)
     # 等18秒
     if isPad:

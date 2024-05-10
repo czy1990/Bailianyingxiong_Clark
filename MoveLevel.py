@@ -127,6 +127,7 @@ def move41寒风营地UpLevel():
     moveDown()
     moveDown()
     waitTimer()
+    u.clickGoHome()
 
 
 timer61 = 1.5
@@ -221,6 +222,7 @@ def move61寂静山谷UpLevelWood():
     moveUp()
     moveUp()
     waitTimer(timer61)
+    u.clickGoHome()
 
 
 timer63 = 2
@@ -335,6 +337,7 @@ def move63哀嚎营地UpLevel():
     moveUp()
     moveRight()
     waitTimer(timer63)
+    u.clickGoHome()
 
 
 timer72 = 2
@@ -342,11 +345,6 @@ timer72 = 2
 
 def move72制热哨站UpLevel():
     print("move72制热哨站UpLevel")
-    # moveRightDown()
-    # moveRightUp()
-    # moveLeftDown()
-    # moveLeftUp()
-
     clickItem.click72炽热哨站()
     moveUp()
     moveRight()
@@ -359,7 +357,7 @@ def move72制热哨站UpLevel():
     moveRight()
     moveRight()
     moveUp()
-    moveRight() #到怪区域了
+    moveRight()  #到怪区域了
     waitTimer(timer72)
 
     moveUp()
@@ -435,3 +433,4 @@ def move72制热哨站UpLevel():
     moveLeftHalf()
     waitTimer(timer72)
     waitTimer(timer72)
+    u.clickGoHome()

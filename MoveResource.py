@@ -46,6 +46,7 @@ def move22双峰山谷_钻石():
     waitTimer(4)
     move_point(50, 80, 50, 110)
     waitTimer(4)
+    u.clickGoHome()
 
 
 timer42 = 1.5
@@ -102,6 +103,7 @@ def move42寒风营地Diamond():
     moveDown()
     moveRight()
     waitTimer(timer42)
+    u.clickGoHome()
 
 
 def move42寒风营地DiamondCount(currentNumber):
@@ -122,8 +124,8 @@ timer51 = 1.5
 def move51王座大厅Wood():
     print("move51王座大厅Wood")
     clickItem.click51王座大厅()
-    waitTimer(timer51)
-    waitTimer(timer51)
+    # 进入王座大厅需要额外3秒
+    waitTimer(4)
     moveLeft()
     moveUp()
     moveLeft()
@@ -148,7 +150,7 @@ def move51王座大厅Wood():
     waitTimer(timer51)
     moveUp()
     moveLeft()
-    moveUp()  #桌子
+    moveUp()  # 桌子
     waitTimer(timer51)
 
     moveLeft()
@@ -160,7 +162,7 @@ def move51王座大厅Wood():
     moveLeft()
     moveDown()
     waitTimer(timer51)
-    moveDown()  #第二个门
+    moveDown()  # 第二个门
 
     moveLeft()
     moveDown()
@@ -191,7 +193,7 @@ def move51王座大厅Wood():
     moveDown()
     waitTimer(timer51)
     moveDown()
-    moveDown()  # 第二个门
+    moveDown()  # 第三个门
 
     moveLeft()
     moveDown()
@@ -229,3 +231,4 @@ def move51王座大厅Wood():
     moveLeft()
     moveUp()
     waitTimer(timer51)
+    u.clickGoHome_确认()

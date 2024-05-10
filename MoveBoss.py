@@ -42,6 +42,7 @@ def move12教堂山谷Boss():
     moveUp()
     moveUp()
     waitTimer(timer12)
+    u.clickGoHome()
 
 
 timer21 = 3
@@ -54,7 +55,7 @@ def move21贫瘠营地Boss():
     moveRight()
     moveRightHalf()
     waitTimer(timer21)
-
+    u.clickGoHome()
 
 timer31 = 3
 
@@ -80,7 +81,7 @@ def move31污染哨站Boss():
     moveDown()
     moveDown()
     waitTimer(timer31)
-
+    u.clickGoHome()
 
 timer32 = 3
 
@@ -104,6 +105,7 @@ def move32腐烂沼泽Boss1():
     moveRight()
     moveUp()
     waitTimer(timer32)
+    u.clickGoHome()
 
 
 timer322 = 3
@@ -121,7 +123,7 @@ def move32腐烂沼泽Boss2():
     moveLeft()
     moveLeft()
     waitTimer(timer322)
-
+    u.clickGoHome()
 
 timer33 = 2
 
@@ -135,6 +137,7 @@ def move33寒风营地Boss():
     moveRight()
     moveUp()
     waitTimer(timer33)
+    u.clickGoHome()
 
 
 timer41 = 5
@@ -163,6 +166,7 @@ def move41魔力之环Boss1():
     moveUp()
     moveUp()
     waitTimer(timer41)
+    u.clickGoHome()
 
 
 timer41 = 5
@@ -176,7 +180,7 @@ def move41魔力之环Boss2():
     moveDown()
     moveDown()
     waitTimer(timer41)
-
+    u.clickGoHome()
 
 timer42 = 5
 
@@ -204,6 +208,8 @@ def move42北风营地Boss():
     moveRight()
     moveLeft()
     waitTimer(timer42)
+    u.clickGoHome()
+
 
 
 def move51王座大厅Refresh():

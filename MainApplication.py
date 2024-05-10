@@ -36,8 +36,8 @@ def click升级4_1寒风营地():
 
 def getUpLevel():
     count = 0
-    diamondCount = moveResource.move42寒风营地DiamondCount(753)
-    woodCount = moveResource.move51王座大厅WoodCount(1968) + diamondCount
+    diamondCount = moveResource.move42寒风营地DiamondCount(838)
+    woodCount = moveResource.move51王座大厅WoodCount(1555) + diamondCount
     while True:  # 这将创建一个无限循环
         count += 1
         print("------循环次数:" + str(count) + "当前时间" + u.currentTime())
@@ -47,7 +47,7 @@ def getUpLevel():
         elif count <= woodCount:
             moveResource.move51王座大厅Wood()
         else:
-            getUpBoss()
+            upBoss()
 
 
 def getUpBoss():
@@ -55,28 +55,17 @@ def getUpBoss():
     while True:  # 创建一个无限循环
         count += 1
         print("------循环次数:" + str(count) + "当前时间" + u.currentTime())
-        # moveBoss.move41魔力之环Boss1()  # 远
-        # moveBoss.move12教堂山谷Boss()  # 近
-        # moveBoss.move21贫瘠营地Boss()  # 近
-        # moveLevel.move61寂静山谷UpLevelWood()
-        #
-        # # moveBoss.move42北风营地Boss()  # 远
-        # moveBoss.move31污染哨站Boss()  # 近
-        # moveBoss.move32腐烂沼泽Boss1()  # 远
-        # moveLevel.move61寂静山谷UpLevelWood()
-        #
-        # # moveBoss.move41魔力之环Boss1()  # 远
-        # moveBoss.move32腐烂沼泽Boss2()  # 远
-        # moveBoss.move33寒风营地Boss()  # 近
-        # moveLevel.move61寂静山谷UpLevelWood()
-        moveBoss.move12教堂山谷Boss()
-        moveBoss.move21贫瘠营地Boss()
-        moveBoss.move31污染哨站Boss()
-        moveBoss.move33寒风营地Boss()
-        moveBoss.move41魔力之环Boss2()
-        moveBoss.move51王座大厅Refresh()
+        upBoss()
+
+
+def upBoss():
+    print("upBoss")
+    moveBoss.move12教堂山谷Boss()
+    moveBoss.move21贫瘠营地Boss()
+    moveBoss.move31污染哨站Boss()
+    moveBoss.move33寒风营地Boss()
+    moveBoss.move41魔力之环Boss2()
+    moveBoss.move51王座大厅Refresh()
+
 
 getUpLevel()
-# getUpLevel()
-# getUpBoss()
-# moveLevel.move72制热哨站UpLevel()
