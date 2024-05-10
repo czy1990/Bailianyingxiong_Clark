@@ -36,7 +36,7 @@ def click升级4_1寒风营地():
 
 def getUpLevel():
     count = 0
-    diamondCount = moveResource.move42寒风营地DiamondCount(838)
+    diamondCount = moveResource.move42寒风营地DiamondCount(1689)
     woodCount = moveResource.move51王座大厅WoodCount(1555) + diamondCount
     while True:  # 这将创建一个无限循环
         count += 1

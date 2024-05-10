@@ -65,7 +65,7 @@ GoHomeTimer = 9
 
 
 def clickGoHome():
-    print("回城")
+    # print("回城")
 
     if isPad:
         click_point(GoHomeX_Pad, GoHomeY_Pad)
@@ -99,7 +99,7 @@ def clickGoHome_确认():
 
     # 点击 确认 的位置
     click_point(60, 60)
-    # 等18秒
+
     if isPad:
         waitTimer(clickGoHome_确认WatingTimer_Pad)
     else:
