@@ -47,7 +47,10 @@ def move22双峰山谷_钻石():
     move_point(50, 80, 50, 110)
     waitTimer(4)
 
-timer42 = 1
+
+timer42 = 1.5
+
+
 def move42寒风营地Diamond():
     print("move42寒风营地Diamond")
     clickItem.click42北风营地()
@@ -90,13 +93,27 @@ def move42寒风营地Diamond():
     moveDown()
     moveDown()
     moveDown()
+    waitTimer(timer42)
     moveLeft()
     moveLeft()
     moveLeft()
     waitTimer(timer42)
     moveDown()
     moveDown()
+    moveRight()
     waitTimer(timer42)
+
+
+def move42寒风营地DiamondCount(currentNumber):
+    count = (2500 - currentNumber) / 60 + 1
+    print("move42寒风营地DiamondCount: " + count.__str__())
+    return count
+
+
+def move51王座大厅WoodCount(currentNumber):
+    count = (4000 - currentNumber) / 100 + 1
+    print("move51王座大厅WoodCount: " + count.__str__())
+    return count
 
 
 timer51 = 1.5

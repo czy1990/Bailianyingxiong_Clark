@@ -86,7 +86,7 @@ clickGoHome_确认WatingTimer = 18
 
 
 def clickGoHome_确认():
-    print("确认")
+    print("clickGoHome_确认")
     if isPad:
         click_point(GoHomeX_Pad, GoHomeY_Pad)
     else:

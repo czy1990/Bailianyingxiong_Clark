@@ -171,6 +171,15 @@ def click51王座大厅():
     u.click传送阵()
     click5冰冠堡垒()
     click子条目1()
+def move51王座大厅Refresh():
+    print("click_5冰冠堡垒_1王座大厅_Refresh")
+    # u.clickGoHome_确认()
+    u.clickGoHome()
+    u.click传送阵()
+    click5冰冠堡垒()
+    click子条目1()
+    u.waitTimer(3)
+    u.clickGoHome_确认()
 
 
 def click61寂静山谷():

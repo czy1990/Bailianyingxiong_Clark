@@ -24,6 +24,11 @@ def moveLeft():
 
 def moveRight():
     u.moveRight()
+def moveRightHalf():
+    u.moveRightHalf()
+
+
+timer12 = 3
 
 
 # ---------------------
@@ -36,8 +41,10 @@ def move12教堂山谷Boss():
     moveUp()
     moveUp()
     moveUp()
-    moveUp()
-    waitTimer(4)
+    waitTimer(timer12)
+
+
+timer21 = 3
 
 
 def move21贫瘠营地Boss():
@@ -45,8 +52,11 @@ def move21贫瘠营地Boss():
     clickItem.click21贫瘠营地()
     moveRight()
     moveRight()
-    moveRight()
-    waitTimer(4)
+    moveRightHalf()
+    waitTimer(timer21)
+
+
+timer31 = 3
 
 
 def move31污染哨站Boss():
@@ -69,7 +79,10 @@ def move31污染哨站Boss():
     moveDown()
     moveDown()
     moveDown()
-    waitTimer(4)
+    waitTimer(timer31)
+
+
+timer32 = 3
 
 
 def move32腐烂沼泽Boss1():
@@ -90,7 +103,10 @@ def move32腐烂沼泽Boss1():
     moveUp()
     moveRight()
     moveUp()
-    waitTimer(5)
+    waitTimer(timer32)
+
+
+timer322 = 3
 
 
 def move32腐烂沼泽Boss2():
@@ -104,7 +120,10 @@ def move32腐烂沼泽Boss2():
     moveLeft()
     moveLeft()
     moveLeft()
-    waitTimer(8)
+    waitTimer(timer322)
+
+
+timer33 = 2
 
 
 def move33寒风营地Boss():
@@ -114,9 +133,11 @@ def move33寒风营地Boss():
     moveRight()
     moveUp()
     moveRight()
-    moveRight()
     moveUp()
-    waitTimer(6)
+    waitTimer(timer33)
+
+
+timer41 = 5
 
 
 def move41魔力之环Boss1():
@@ -141,8 +162,10 @@ def move41魔力之环Boss1():
     waitTimer(2)
     moveUp()
     moveUp()
-    waitTimer(12)
+    waitTimer(timer41)
 
+
+timer41 = 5
 
 def move41魔力之环Boss2():
     print("move41魔力之环Boss1")
@@ -152,7 +175,10 @@ def move41魔力之环Boss2():
     moveDown()
     moveDown()
     moveDown()
-    waitTimer(15)
+    waitTimer(timer41)
+
+
+timer42 = 5
 
 
 def move42北风营地Boss():
@@ -176,6 +202,10 @@ def move42北风营地Boss():
     moveLeft()
     moveDown()
     moveRight()
-    waitTimer(1)
     moveLeft()
-    waitTimer(20)
+    waitTimer(timer42)
+
+
+def move51王座大厅Refresh():
+    print("move51王座大厅Refresh")
+    clickItem.move51王座大厅Refresh()
