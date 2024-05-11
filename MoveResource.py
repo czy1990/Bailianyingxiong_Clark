@@ -49,7 +49,7 @@ def move22双峰山谷_钻石():
     u.clickGoHome()
 
 
-timer42 = 1.5
+timer42 = 1.3
 
 
 def move42寒风营地Diamond():
@@ -58,8 +58,7 @@ def move42寒风营地Diamond():
     moveLeft()
     moveLeft()
     moveDown()
-    moveDown()
-    waitTimer(timer42)
+    moveDown()  # 刚出门
     moveLeft()
     moveLeft()
     moveLeft()
@@ -67,7 +66,6 @@ def move42寒风营地Diamond():
     waitTimer(timer42)
     moveLeft()
     moveLeft()
-    waitTimer(timer42)
     moveDown()
     moveLeft()
     moveDown()
@@ -83,25 +81,25 @@ def move42寒风营地Diamond():
     moveUp()
     moveUp()
     waitTimer(timer42)
+
     moveLeft()
     moveLeft()
     waitTimer(timer42)
     moveUp()
     moveUp()
-    moveUp()
+    moveUp()  # 到最上
     waitTimer(timer42)
+
     moveLeft()
     moveDown()
     moveDown()
-    moveDown()
-    waitTimer(timer42)
-    moveLeft()
-    moveLeft()
-    moveLeft()
     waitTimer(timer42)
     moveDown()
+    moveLeft()
+    moveLeft()
+    moveLeft()
     moveDown()
-    moveRight()
+    moveDown()
     waitTimer(timer42)
     u.clickGoHome()
 

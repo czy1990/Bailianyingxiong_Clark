@@ -14,18 +14,48 @@ def moveUp():
     u.moveUp()
 
 
+def moveUpHalf():
+    u.moveUpHalf()
+
+
 def moveDown():
     u.moveDown()
+
+
+def moveDownHalf():
+    u.moveDownHalf()
 
 
 def moveLeft():
     u.moveLeft()
 
 
+def moveLeftHalf():
+    u.moveLeftHalf()
+
+
 def moveRight():
     u.moveRight()
+
+
 def moveRightHalf():
     u.moveRightHalf()
+
+
+def moveLeftUp():
+    u.moveLeftUp()
+
+
+def moveLeftDown():
+    u.moveLeftDown()
+
+
+def moveRightUp():
+    u.moveRightUp()
+
+
+def moveRightDown():
+    u.moveRightDown()
 
 
 timer12 = 3
@@ -54,6 +84,24 @@ def move21贫瘠营地Boss():
     moveRight()
     moveRight()
     moveRightHalf()
+    waitTimer(timer21)
+    u.clickGoHome()
+
+timer21 = 2
+def move22双峰山谷Boss():
+    print("move21贫瘠营地Boss")
+    clickItem.click22双峰山谷()
+    moveRightUp()
+    moveRightUp()
+    moveRightHalf()
+    moveRight()
+    moveRight()
+    moveRight()
+    moveRight()
+    moveRight()
+    moveRight()
+    moveRight()
+    moveUpHalf()
     waitTimer(timer21)
     u.clickGoHome()
 
@@ -93,17 +141,15 @@ def move32腐烂沼泽Boss1():
     moveUp()
     moveUp()
     moveRight()
-    moveRight()
     moveUp()
     moveUp()
     moveUp()
-    moveRight()
-    moveRight()
+    moveRightUp()
+    moveRightUp()
     moveUp()
     moveUp()
-    moveUp()
-    moveRight()
-    moveUp()
+    moveRightUp()
+    moveRightHalf()
     waitTimer(timer32)
     u.clickGoHome()
 
@@ -182,7 +228,7 @@ def move41魔力之环Boss2():
     waitTimer(timer41)
     u.clickGoHome()
 
-timer42 = 5
+timer42 = 6
 
 
 def move42北风营地Boss():
@@ -192,6 +238,7 @@ def move42北风营地Boss():
     moveLeft()
     moveDown()
     moveDown()
+
     moveLeft()
     moveLeft()
     moveLeft()
@@ -205,11 +252,25 @@ def move42北风营地Boss():
     moveLeft()
     moveLeft()
     moveDown()
-    moveRight()
     moveLeft()
     waitTimer(timer42)
     u.clickGoHome()
 
+timer52 = 10
+def move52魔力回廊Boss_Refresh():
+    print("move52魔力回廊Boss_Refresh")
+    clickItem.click52魔力回廊()
+    moveLeft()
+    moveLeft()
+    moveLeftUp()
+    moveLeft()
+    moveLeftUp()
+    moveLeft()
+    moveLeftUp()
+    moveLeft()
+    moveLeftUp()
+    waitTimer(timer52)
+    u.clickGoHome_确认()
 
 
 def move51王座大厅Refresh():

@@ -112,7 +112,7 @@ def move_point(fx, fy, tx, ty):
     fyy = fy / 100 * displayY
     txx = tx / 100 * displayX
     tyy = ty / 100 * displayY
-    context.swipe(fxx, fyy, txx, tyy)
+    context.swipe(fxx, fyy, txx, tyy, 0.0)
 
 
 def moveUp():
@@ -147,17 +147,22 @@ def moveRightHalf():
     move_point(55, 80, 70, 80)
 
 
-
 def moveLeftUp():
     move_point(60, 60, 40, 40)
+
 
 def moveLeftDown():
     move_point(60, 40, 40, 60)
 
+
 def moveRightUp():
     move_point(40, 60, 60, 40)
+
+
 def moveRightDown():
     move_point(40, 40, 60, 60)
+
+
 def devicesInfo():
     print(context.window_size())
 
@@ -167,6 +172,11 @@ def currentTime():
     formatted_time = current_time.strftime("%Y-%m-%d %H:%M:%S")
     return formatted_time
 
+def currentTimerNow():
+    return datetime.datetime.now()
+
+def formatTimer(formatT):
+    return formatT.strftime("%Y-%m-%d %H:%M:%S")
 
 def timeDifference(lastTime):
     difTime = datetime.datetime.now() - lastTime

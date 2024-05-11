@@ -144,7 +144,7 @@ def click32腐烂沼泽():
 
 
 def click33寒风营地():
-    print("click_3污染之林_3污染之林")
+    print("click_3污染之林_3寒风营地")
     u.click传送阵()
     click3污染之林()
     click子条目3()
@@ -169,6 +169,13 @@ def click51王座大厅():
     u.click传送阵()
     click5冰冠堡垒()
     click子条目1()
+
+def click52魔力回廊():
+    print("click_5冰冠堡垒_2魔力回廊")
+    u.click传送阵()
+    click5冰冠堡垒()
+    click子条目2()
+    u.waitTimer(3)
 
 def move51王座大厅Refresh():
     print("click_5冰冠堡垒_1王座大厅_Refresh")
