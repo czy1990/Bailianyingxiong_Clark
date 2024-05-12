@@ -34,20 +34,20 @@ def click升级4_1寒风营地():
     moveBoss.move41寒风营地UpLevel()
 
 
-def getUpLevel():
+def getUpLevel(wood=0, diamond=0):
     count = 0
-    # 时间差
+    # 运行时间
     print("------getUpLevel 起始时间" + u.currentTime())
     ctimer = u.currentTimerNow()
 
-    diamondCount = moveResource.move42寒风营地DiamondCount(1471)
-    woodCount = moveResource.move51王座大厅WoodCount(375) + diamondCount
+    diamondCount = moveResource.move42寒风营地DiamondCount(diamond)
+    woodCount = moveResource.move51王座大厅WoodCount(wood) + diamondCount
 
     while True:  # 这将创建一个无限循环
         count += 1
         timerDiff = u.currentTimerNow() - ctimer
 
-        print("------循环次数:" + str(count) + "当前时间" + u.currentTime() + ",时间差:" + timerDiff.__str__())
+        print("------循环次数:" + str(count) + "当前时间" + u.currentTime() + ",运行时间:" + timerDiff.__str__())
 
         if count < diamondCount:  # n 此以下执行此函数
             moveResource.move42寒风营地Diamond()  # 大致60一次
@@ -64,7 +64,7 @@ def getUpBoss():
     while True:  # 创建一个无限循环
         count += 1
         timerDiff = u.currentTimerNow() - ctimer
-        print("------循环次数:" + str(count) + ",当前时间:" + u.currentTime() + ",时间差:" + timerDiff.__str__())
+        print("------循环次数:" + str(count) + ",当前时间:" + u.currentTime() + ",运行时间:" + timerDiff.__str__())
 
         upBoss()
 
@@ -99,4 +99,5 @@ def upBoss():
     moveBoss.move41魔力之环Boss2()  # 10
     moveBoss.move51王座大厅Refresh_NO_Home()
 
-getUpLevel()
+
+getUpLevel(1336,301)
