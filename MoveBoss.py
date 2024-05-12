@@ -65,6 +65,7 @@ timer12 = 3
 def move12教堂山谷Boss():
     print("move12教堂山谷Boss")
     clickItem.click12教堂山谷()
+    waitTimer(3)
     moveRight()
     moveUp()
     moveUp()
@@ -72,7 +73,13 @@ def move12教堂山谷Boss():
     moveUp()
     moveUp()
     waitTimer(timer12)
-    u.clickGoHome()
+    moveDown()
+    moveDown()
+    moveDown()
+    moveDown()
+    moveDown()
+    moveLeft()
+    # u.clickGoHome()
 
 
 timer21 = 3
@@ -85,7 +92,10 @@ def move21贫瘠营地Boss():
     moveRight()
     moveRightHalf()
     waitTimer(timer21)
-    u.clickGoHome()
+    moveLeftHalf()
+    moveLeft()
+    moveLeft()
+    # u.clickGoHome()
 
 timer21 = 2
 def move22双峰山谷Boss():
@@ -113,7 +123,6 @@ def move31污染哨站Boss():
     clickItem.click31污染哨站()
     moveRight()
     moveRight()
-    moveDown()
     moveDown()
     moveDown()
     moveLeft()
@@ -183,7 +192,12 @@ def move33寒风营地Boss():
     moveRight()
     moveUp()
     waitTimer(timer33)
-    u.clickGoHome()
+    moveDown()
+    moveLeft()
+    moveDown()
+    moveLeft()
+    moveLeft()
+    # u.clickGoHome()
 
 
 timer41 = 5
@@ -226,7 +240,12 @@ def move41魔力之环Boss2():
     moveDown()
     moveDown()
     waitTimer(timer41)
-    u.clickGoHome()
+    moveUp()
+    moveUp()
+    moveUp()
+    moveUp()
+    moveUp()
+    # u.clickGoHome()
 
 timer42 = 6
 
@@ -276,3 +295,7 @@ def move52魔力回廊Boss_Refresh():
 def move51王座大厅Refresh():
     print("move51王座大厅Refresh")
     clickItem.move51王座大厅Refresh()
+
+def move51王座大厅Refresh_NO_Home():
+    print("move51王座大厅Refresh_NO_Home")
+    clickItem.move51王座大厅Refresh_NO_Home()

@@ -186,6 +186,12 @@ def move51王座大厅Refresh():
     u.waitTimer(3)
     u.clickGoHome_确认()
 
+def move51王座大厅Refresh_NO_Home():
+    print("move51王座大厅Refresh_NO_Home")
+    u.click传送阵()
+    click5冰冠堡垒()
+    click子条目1()
+    u.waitTimer(3)
 
 def click61寂静山谷():
     print("click_6幽魂之地_1寂静山谷")

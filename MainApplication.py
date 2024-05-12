@@ -40,8 +40,8 @@ def getUpLevel():
     print("------getUpLevel 起始时间" + u.currentTime())
     ctimer = u.currentTimerNow()
 
-    diamondCount = moveResource.move42寒风营地DiamondCount(364)
-    woodCount = moveResource.move51王座大厅WoodCount(741) + diamondCount
+    diamondCount = moveResource.move42寒风营地DiamondCount(1471)
+    woodCount = moveResource.move51王座大厅WoodCount(375) + diamondCount
 
     while True:  # 这将创建一个无限循环
         count += 1
@@ -84,12 +84,19 @@ def upBoss():
     # moveBoss.move52魔力回廊Boss_Refresh()  # 10
 
     # 0:03:18 70 金币的版本 大致一小时1272金币
+    # moveBoss.move12教堂山谷Boss()  # 10
+    # moveBoss.move21贫瘠营地Boss()  # 10
+    # moveBoss.move31污染哨站Boss()  # 20
+    # moveBoss.move33寒风营地Boss()  # 10
+    # moveBoss.move41魔力之环Boss2()  # 10
+    # moveBoss.move52魔力回廊Boss_Refresh()  # 10
+
+    # 0:02:31 60金币版本 大致一小时 1440金币
     moveBoss.move12教堂山谷Boss()  # 10
     moveBoss.move21贫瘠营地Boss()  # 10
     moveBoss.move31污染哨站Boss()  # 20
     moveBoss.move33寒风营地Boss()  # 10
     moveBoss.move41魔力之环Boss2()  # 10
-    moveBoss.move52魔力回廊Boss_Refresh()  # 10
+    moveBoss.move51王座大厅Refresh_NO_Home()
 
-
-getUpBoss()
+getUpLevel()
