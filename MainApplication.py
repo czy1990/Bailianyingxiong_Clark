@@ -36,7 +36,7 @@ def click升级4_1寒风营地():
     moveBoss.move41寒风营地UpLevel()
 
 
-def getUpLevel(wood=0, diamond=0):
+def getUpLevel(wood=0, diamond=0, hours=10000000, minutes=0):
     count = 0
     # 运行时间
     print("------getUpLevel 起始时间" + u.currentTime())
@@ -46,7 +46,7 @@ def getUpLevel(wood=0, diamond=0):
     woodCount = moveResource.move51王座大厅WoodCount(wood) + diamondCount
 
     start_time = time.time()  # 获取当前时间的时间戳
-    end_time = start_time + 2 * 3600 - 25 * 60  # 1小时后的时间戳 1 * 3600, 秒为单位
+    end_time = start_time + hours * 3600 + minutes * 60  # 1小时后的时间戳 1 * 3600, 秒为单位
 
     # while True:
     while start_time < end_time:  # 这将创建一个无限循环
@@ -127,4 +127,4 @@ def upBoss():
 
 # getCard(19333)
 
-getUpLevel(200, 2500)
+getUpLevel(762, 2500, 1, 30)
