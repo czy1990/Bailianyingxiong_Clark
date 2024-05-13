@@ -1,5 +1,6 @@
 import uiautomator2 as u2
 import datetime
+import time
 
 # 手机像素宽：1440-1
 # displayX = 720
@@ -176,7 +177,8 @@ def currentTimerNow():
     return datetime.datetime.now()
 
 def formatTimer(formatT):
-    return formatT.strftime("%Y-%m-%d %H:%M:%S")
+    local_time_tuple = time.localtime(formatT)
+    return time.strftime('%Y-%m-%d %H:%M:%S', local_time_tuple)
 
 def timeDifference(lastTime):
     difTime = datetime.datetime.now() - lastTime

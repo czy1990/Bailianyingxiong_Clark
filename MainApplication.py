@@ -1,9 +1,9 @@
-from datetime import timedelta
+from datetime import datetime, timedelta
 
+import time
 import MoveBoss as moveBoss
 import Utils as u
 import ClickItem as clickItem
-import MoveLevel as moveLevel
 import MoveResource as moveResource
 
 # 通过IP连接
@@ -45,11 +45,16 @@ def getUpLevel(wood=0, diamond=0):
     diamondCount = moveResource.move42寒风营地DiamondCount(diamond)
     woodCount = moveResource.move51王座大厅WoodCount(wood) + diamondCount
 
-    while True:  # 这将创建一个无限循环
+    start_time = time.time()  # 获取当前时间的时间戳
+    end_time = start_time + 2 * 3600 - 25 * 60  # 1小时后的时间戳 1 * 3600, 秒为单位
+
+    # while True:
+    while start_time < end_time:  # 这将创建一个无限循环
         count += 1
         timerDiff = u.currentTimerNow() - ctimer
 
         print("------循环次数:" + str(count) + "当前时间" + u.currentTime() + ",运行时间:" + timerDiff.__str__())
+        print("start_time:" + u.formatTimer(start_time) + " ,end_time:" + u.formatTimer(end_time))
 
         if count < diamondCount:  # n 此以下执行此函数
             moveResource.move42寒风营地Diamond()  # 大致60一次
@@ -57,6 +62,8 @@ def getUpLevel(wood=0, diamond=0):
             moveResource.move51王座大厅Wood()
         else:
             upBoss()
+        # 更新运行时间
+        start_time = time.time()
 
 
 def getUpBoss():
@@ -118,6 +125,6 @@ def upBoss():
     moveBoss.move51王座大厅Refresh_NO_Home()
 
 
-getCard(19333)
+# getCard(19333)
 
-# getUpLevel(4000,2500)
+getUpLevel(200, 2500)
