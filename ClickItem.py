@@ -170,12 +170,14 @@ def click51王座大厅():
     click5冰冠堡垒()
     click子条目1()
 
+
 def click52魔力回廊():
     print("click_5冰冠堡垒_2魔力回廊")
     u.click传送阵()
     click5冰冠堡垒()
     click子条目2()
     u.waitTimer(3)
+
 
 def move51王座大厅Refresh():
     print("click_5冰冠堡垒_1王座大厅_Refresh")
@@ -186,12 +188,14 @@ def move51王座大厅Refresh():
     u.waitTimer(3)
     u.clickGoHome_确认()
 
+
 def move51王座大厅Refresh_NO_Home():
     print("move51王座大厅Refresh_NO_Home")
     u.click传送阵()
     click5冰冠堡垒()
     click子条目1()
     u.waitTimer(3)
+
 
 def click61寂静山谷():
     print("click_6幽魂之地_1寂静山谷")
@@ -212,3 +216,15 @@ def click72炽热哨站():
     u.click传送阵()
     click7燃烧平原()
     click子条目2()
+
+
+def clickCardMoney():
+    # print("click_Card_Money")
+    u.click_point(50, 67)
+    u.waitTimer(8)
+
+
+def clickCardAbandon():
+    # print("click_Card_Abandon")
+    u.click_point(50, 76)
+    u.waitTimer(4)

@@ -1,3 +1,5 @@
+from datetime import timedelta
+
 import MoveBoss as moveBoss
 import Utils as u
 import ClickItem as clickItem
@@ -69,6 +71,22 @@ def getUpBoss():
         upBoss()
 
 
+def getCard(money):
+    count = 0
+    print("------getCard 起始时间" + u.currentTime())
+    ctimer = u.currentTimerNow()
+
+    moneyCount = money // 100
+    while count < moneyCount:  # 创建一个无限循环
+        count += 1
+        timerDiff = u.currentTimerNow() - ctimer
+        print("------剩余次数:" + str(moneyCount - count) + "/" + moneyCount.__str__()
+              + ",当前时间:" + u.currentTime() + ",运行时间:" + timerDiff.__str__())
+
+        clickItem.clickCardMoney()
+        clickItem.clickCardAbandon()
+
+
 def upBoss():
     print("upBoss")
     # 0:05:42分钟 110金币的版本  大致一小时1157金币
@@ -100,4 +118,6 @@ def upBoss():
     moveBoss.move51王座大厅Refresh_NO_Home()
 
 
-getUpLevel(1336,301)
+getCard(19333)
+
+# getUpLevel(4000,2500)

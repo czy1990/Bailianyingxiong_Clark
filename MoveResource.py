@@ -105,13 +105,13 @@ def move42寒风营地Diamond():
 
 
 def move42寒风营地DiamondCount(currentNumber):
-    count = (2500 - currentNumber) / 60 + 1
+    count = (2500 - currentNumber) / 60
     print("move42寒风营地DiamondCount: " + count.__str__())
     return count
 
 
 def move51王座大厅WoodCount(currentNumber):
-    count = (4000 - currentNumber) / 100 + 1
+    count = (4000 - currentNumber) / 100
     print("move51王座大厅WoodCount: " + count.__str__())
     return count
 
