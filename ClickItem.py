@@ -1,6 +1,6 @@
 import Utils as u
 
-clickWaitTimer_Pad = 1.5
+clickWaitTimer_Pad = 2
 clickWaitTimer = 2
 
 
@@ -76,7 +76,7 @@ def click7燃烧平原():
 # 大目录-------end-------
 # 大目录-------end-------
 # 子目录-------start-------
-clickSubWaitTimer_Pad = 7
+clickSubWaitTimer_Pad = 9
 clickSubWaitTimer = 9
 
 

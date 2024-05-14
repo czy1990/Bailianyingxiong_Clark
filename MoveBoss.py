@@ -65,7 +65,6 @@ timer12 = 3
 def move12教堂山谷Boss():
     print("move12教堂山谷Boss")
     clickItem.click12教堂山谷()
-    waitTimer(3)
     moveRight()
     moveUp()
     moveUp()

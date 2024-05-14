@@ -26,6 +26,38 @@ def moveRight():
     u.moveRight()
 
 
+def moveLeftHalf():
+    u.moveLeftHalf()
+
+
+def moveRightHalf():
+    u.moveRightHalf()
+
+
+def moveUpHalf():
+    u.moveUpHalf()
+
+
+def moveDownHalf():
+    u.moveDownHalf()
+
+
+def moveLeftUp():
+    u.moveLeftUp()
+
+
+def moveLeftDown():
+    u.moveLeftDown()
+
+
+def moveRightUp():
+    u.moveRightUp()
+
+
+def moveRightDown():
+    u.moveRightDown()
+
+
 # ---------------------
 def move22双峰山谷_钻石():
     print("move22双峰山谷_钻石")
@@ -111,7 +143,7 @@ def move42寒风营地DiamondCount(currentNumber):
 
 
 def move51王座大厅WoodCount(currentNumber):
-    count = (4000 - currentNumber) / 100
+    count = (4000 - currentNumber) / 138
     print("move51王座大厅WoodCount: " + count.__str__())
     return count
 
@@ -128,105 +160,131 @@ def move51王座大厅Wood():
     moveUp()
     moveLeft()
     moveUp()
+    moveUp()
     waitTimer(timer51)
 
+    moveRight()
     moveUp()
     moveRight()
     moveUp()
+    moveUp()
+    moveUp()
     moveRight()
-    waitTimer(timer51)
-    moveUp()
-    moveUp()
-    moveUp()  # 门拐角
+    waitTimer(timer51)  # 门拐角
 
-    moveRight()
-    waitTimer(timer51)
     moveUp()
     moveRight()
     moveRight()
-    moveUp()
-    waitTimer(timer51)
-    moveUp()
-    moveLeft()
-    moveUp()  # 桌子
-    waitTimer(timer51)
-
-    moveLeft()
-    moveLeft()
-    moveUp()
-    waitTimer(timer51)
-    moveLeft()
-    moveLeft()
-    moveLeft()
-    moveDown()
-    waitTimer(timer51)
-    moveDown()  # 第二个门
-
-    moveLeft()
-    moveDown()
-    moveLeft()
-    moveLeft()
-    waitTimer(timer51)
-    moveLeft()
-    moveUp()
-    moveLeft()
-
-    moveLeft()
-    moveDown()
-    waitTimer(timer51)  # 平台
-
-    moveDown()
-    moveDown()
-    moveDown()
-    waitTimer(timer51)
-    moveDown()
-
-    moveLeft()
-    moveLeft()
-    moveDown()
-    waitTimer(timer51)
-    moveLeft()
-    moveDown()
-    moveDown()
-    moveDown()
-    waitTimer(timer51)
-    moveDown()
-    moveDown()  # 第三个门
-
-    moveLeft()
-    moveDown()
-    moveLeft()
-    waitTimer(timer51)
-    moveLeft()
-    moveDown()
-    moveLeft()
-    moveLeft()
+    moveRightUp()
     waitTimer(timer51)
 
     moveUp()
     moveLeft()
+    moveLeftDown()
     moveLeft()
-    moveUp()
-    waitTimer(timer51)
-    moveUp()
-    moveLeft()
-    moveLeft()
+    moveRightUp()
+    waitTimer(timer51)  # 桌子边上
+
+    moveLeftUp()
+    moveLeftUp()
+    moveLeftUp()
     moveLeft()
     waitTimer(timer51)
 
-    moveUp()
+    moveLeft()
+    moveLeftDown()
+    moveDown()
+    moveLeftDown()
+    moveLeftHalf()
+    moveDownHalf()
+    moveLeftDown()
+    moveRightDown()
+    waitTimer(timer51) # 出门
+
+    moveLeftUp()
+    moveLeft()
     moveLeft()
     moveUp()
+    moveLeftUp()
+    moveLeft()
     waitTimer(timer51)
-    moveLeft()
-    moveUp()
-    moveLeft()
-    moveLeft()
+
+    moveLeftDown()
+    moveDown()
+    moveDown()
     waitTimer(timer51)
-    moveUp()
+
+    # 打突出的部分
+    moveRightDown()
+    moveRightDown()
+    waitTimer(timer51)
+    moveLeftUp()
+    moveLeftUp()
+
+    moveLeft()
+    moveLeftUp()
+    moveLeft()
+    moveLeftUp()
+    moveLeftDown()
+    moveLeft()
+    moveDown()
+    moveLeftDown()  # 平台
+    waitTimer(timer51)
+    moveRightDown()
+    moveRightDown()
+
+    moveLeft()
+    moveLeftUp()
+    moveLeft()
+    moveLeft()
+    moveLeftDown()
+    waitTimer(timer51)
+
+    moveLeft()
+    moveRightDown()
+    moveRightDown()
+    moveDown()
+    waitTimer(timer51)
+
+    moveLeft()
+    moveDown()
+    moveDown()
+    moveDown()
+    moveRightDown()
+    waitTimer(timer51)
+    moveLeftUp()
+    moveLeftUp()
+    moveLeftUp()
 
     moveLeft()
     moveLeft()
+    moveLeft()
+    moveLeftUp()
+    waitTimer(timer51)
+    moveLeftUp()
+
+    moveLeft()
     moveUp()
+    moveLeft()
+    moveLeft()
+    moveLeftUp()
+    moveLeftUp()
+    moveRightUp()
+    waitTimer(timer51)
+
+    moveLeftUp()
+    moveLeft()
+    moveLeftUp()
+    moveLeft()
+    waitTimer(timer51)
+
+    moveLeft()
+    moveLeft()
+    moveDown()
+    moveRightDown()
+    waitTimer(timer51)
+
+    moveRight()
+    moveRight()
     waitTimer(timer51)
     u.clickGoHome_确认()

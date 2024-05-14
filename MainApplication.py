@@ -36,7 +36,7 @@ def click升级4_1寒风营地():
     moveBoss.move41寒风营地UpLevel()
 
 
-def getUpLevel(wood=0, diamond=0, hours=10000000, minutes=0):
+def getUpLevel(wood=0, diamond=0, hours=1000, minutes=0):
     count = 0
     # 运行时间
     print("------getUpLevel 起始时间" + u.currentTime())
@@ -126,5 +126,4 @@ def upBoss():
 
 
 # getCard(19333)
-
-getUpLevel(762, 2500, 1, 30)
+getUpLevel(2963, 2500)

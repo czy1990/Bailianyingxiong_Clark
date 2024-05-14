@@ -47,8 +47,8 @@ click传送阵Timer = 3
 
 
 def click传送阵():
-    # print("click传送阵")
-    click_point(55, 40)
+    print("click传送阵")
+    click_point(55, 42)
     if isPad:
         waitTimer(click传送阵Timer_Pad)
     else:
