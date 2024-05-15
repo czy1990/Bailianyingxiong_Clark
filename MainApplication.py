@@ -145,5 +145,11 @@ def click竞技场(numBer=3):
         u.waitTimer(5)
 
 
+# 竞技场(次数)  慎用, 绿钻
+# click竞技场()
+
+# 金币抽卡
 # getCard(19333)
-getUpLevel(1038, 2500)
+
+#刷钱+资源(木头+钻石)
+getUpLevel(219, 2500)

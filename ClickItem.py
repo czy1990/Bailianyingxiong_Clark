@@ -189,8 +189,8 @@ def move51王座大厅Refresh():
     u.clickGoHome_确认()
 
 
-def move51王座大厅Refresh_NO_Home():
-    print("move51王座大厅Refresh_NO_Home")
+def click51王座大厅Refresh_NO_Home():
+    print("click51王座大厅Refresh_NO_Home")
     u.click传送阵()
     click5冰冠堡垒()
     click子条目1()

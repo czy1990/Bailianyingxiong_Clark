@@ -297,4 +297,4 @@ def move51王座大厅Refresh():
 
 def move51王座大厅Refresh_NO_Home():
     print("move51王座大厅Refresh_NO_Home")
-    clickItem.move51王座大厅Refresh_NO_Home()
+    clickItem.click51王座大厅Refresh_NO_Home()
