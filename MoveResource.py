@@ -154,8 +154,8 @@ timer51 = 1.5
 def move51王座大厅Wood():
     print("move51王座大厅Wood")
     clickItem.click51王座大厅()
-    # 进入王座大厅需要额外4秒
-    waitTimer(4)
+    # 进入王座大厅需要额外6秒
+    waitTimer(6)
     moveLeft()
     moveUp()
     moveLeft()

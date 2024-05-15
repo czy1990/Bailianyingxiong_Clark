@@ -48,6 +48,9 @@ def getUpLevel(wood=0, diamond=0, hours=1000, minutes=0):
     start_time = time.time()  # 获取当前时间的时间戳
     end_time = start_time + hours * 3600 + minutes * 60  # 1小时后的时间戳 1 * 3600, 秒为单位
 
+    # 第一次 自动点击城镇按钮
+    u.click_point(57, 33)
+
     # while True:
     while start_time < end_time:  # 这将创建一个无限循环
         count += 1
@@ -127,7 +130,6 @@ def upBoss():
 
 
 def click竞技场(numBer=3):
-
     # 用法: click竞技场(10)
     count = 0
     while count < numBer:
@@ -144,5 +146,4 @@ def click竞技场(numBer=3):
 
 
 # getCard(19333)
-# getUpLevel(4000, 2500)
-
+getUpLevel(1038, 2500)
