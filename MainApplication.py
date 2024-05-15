@@ -116,14 +116,33 @@ def upBoss():
     # moveBoss.move41魔力之环Boss2()  # 10
     # moveBoss.move52魔力回廊Boss_Refresh()  # 10
 
-    # 0:02:31 60金币版本 大致一小时 1440金币
+    # 0:02:31 60金币版本 大致一小时
+    u.waitTimer(2)
     moveBoss.move12教堂山谷Boss()  # 10
     moveBoss.move21贫瘠营地Boss()  # 10
     moveBoss.move31污染哨站Boss()  # 20
     moveBoss.move33寒风营地Boss()  # 10
-    moveBoss.move41魔力之环Boss2()  # 10
+    # moveBoss.move41魔力之环Boss2()  # 10
     moveBoss.move51王座大厅Refresh_NO_Home()
 
 
+def click竞技场(numBer=3):
+
+    # 用法: click竞技场(10)
+    count = 0
+    while count < numBer:
+        count += 1
+        print("-----" + count.__str__() + "-1-u.click_point(80, 66)")
+        u.click_point(80, 66)
+        u.waitTimer(8)
+        print("" + count.__str__() + "-2-u.moveRightHalf()")
+        u.moveRightHalf()
+        u.waitTimer(13)
+        print("" + count.__str__() + "-3-u.click_point(80, 66)")
+        u.click_point(80, 66)
+        u.waitTimer(5)
+
+
 # getCard(19333)
-getUpLevel(2963, 2500)
+# getUpLevel(4000, 2500)
+
