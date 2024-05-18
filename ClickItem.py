@@ -76,7 +76,7 @@ def click7燃烧平原():
 # 大目录-------end-------
 # 大目录-------end-------
 # 子目录-------start-------
-clickSubWaitTimer_Pad = 9
+clickSubWaitTimer_Pad = 7
 clickSubWaitTimer = 9
 
 
@@ -223,6 +223,9 @@ def clickCardMoney():
     u.click_point(50, 67)
     u.waitTimer(8)
 
+def click3x():
+    u.click_point(80,60)
+    u.waitTimer(1)
 
 def clickCardAbandon():
     # print("click_Card_Abandon")

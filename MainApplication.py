@@ -14,29 +14,7 @@ import MoveResource as moveResource
 u.init(True)
 
 
-def click刷钱1_3():
-    moveBoss.move12教堂山谷Boss()
-    moveBoss.move21贫瘠营地Boss()
-    moveBoss.move31污染哨站Boss()
-    moveBoss.move32腐烂沼泽Boss1()
-    moveBoss.move32腐烂沼泽Boss2()
-    moveBoss.move33寒风营地Boss()
-
-
-def click刷钱2_3():
-    moveBoss.move21贫瘠营地Boss()
-    moveBoss.move31污染哨站Boss()
-    moveBoss.move32腐烂沼泽Boss1()
-    moveBoss.move32腐烂沼泽Boss2()
-    moveBoss.move33寒风营地Boss()
-
-
-def click升级4_1寒风营地():
-    print("click升级4_1寒风营地")
-    moveBoss.move41寒风营地UpLevel()
-
-
-def getUpLevel(wood=0, diamond=0, hours=1000, minutes=0):
+def getUpLevel(wood=4000, diamond=2500, hours=1000, minutes=0):
     count = 0
     # 运行时间
     print("------getUpLevel 起始时间" + u.currentTime())
@@ -67,6 +45,13 @@ def getUpLevel(wood=0, diamond=0, hours=1000, minutes=0):
             upBoss()
         # 更新运行时间
         start_time = time.time()
+        # 第goHomeNumber次回家
+        goHomeNumber = 40
+        goHomeCount = (count % goHomeNumber)
+        isGoHome = goHomeCount == 0
+        print("goHomeCount" + goHomeCount.__str__() + ",isGoHome: +" + isGoHome.__str__())
+        if isGoHome:
+            u.clickGoHome_确认()
 
 
 def getUpBoss():
@@ -81,51 +66,38 @@ def getUpBoss():
         upBoss()
 
 
-def getCard(money):
+def getCard(money, max3X=False):
     count = 0
     print("------getCard 起始时间" + u.currentTime())
     ctimer = u.currentTimerNow()
 
-    moneyCount = money // 100
+    if max3X:
+        moneyCount = money // 300
+    else:
+        moneyCount = money // 100
+
     while count < moneyCount:  # 创建一个无限循环
         count += 1
         timerDiff = u.currentTimerNow() - ctimer
         print("------剩余次数:" + str(moneyCount - count) + "/" + moneyCount.__str__()
               + ",当前时间:" + u.currentTime() + ",运行时间:" + timerDiff.__str__())
 
+        if max3X:
+            clickItem.click3x()
+
         clickItem.clickCardMoney()
+        u.screenshot(count)
         clickItem.clickCardAbandon()
 
 
 def upBoss():
     print("upBoss")
-    # 0:05:42分钟 110金币的版本  大致一小时1157金币
-    # moveBoss.move12教堂山谷Boss()  # 10
-    # moveBoss.move21贫瘠营地Boss()  # 10
-    # moveBoss.move22双峰山谷Boss()  # 10
-    # moveBoss.move31污染哨站Boss()  # 10
-    # moveBoss.move32腐烂沼泽Boss1()  # 10
-    # moveBoss.move32腐烂沼泽Boss2()  # 10
-    # moveBoss.move33寒风营地Boss()  # 10
-    # moveBoss.move41魔力之环Boss2()  # 10
-    # moveBoss.move42北风营地Boss()  # 10
-    # moveBoss.move52魔力回廊Boss_Refresh()  # 10
-
-    # 0:03:18 70 金币的版本 大致一小时1272金币
-    # moveBoss.move12教堂山谷Boss()  # 10
-    # moveBoss.move21贫瘠营地Boss()  # 10
-    # moveBoss.move31污染哨站Boss()  # 20
-    # moveBoss.move33寒风营地Boss()  # 10
-    # moveBoss.move41魔力之环Boss2()  # 10
-    # moveBoss.move52魔力回廊Boss_Refresh()  # 10
-
-    # 0:02:31 60金币版本 大致一小时
-    u.waitTimer(2)
-    moveBoss.move12教堂山谷Boss()  # 10
+    # 0:02:05 50金币版本 大致一小时
+    u.waitTimer(3)
     moveBoss.move21贫瘠营地Boss()  # 10
+    moveBoss.move12教堂山谷Boss()  # 10
     moveBoss.move31污染哨站Boss()  # 20
     moveBoss.move33寒风营地Boss()  # 10
-    # moveBoss.move41魔力之环Boss2()  # 10
     moveBoss.move51王座大厅Refresh_NO_Home()
 
 
@@ -149,7 +121,7 @@ def click竞技场(numBer=3):
 # click竞技场()
 
 # 金币抽卡
-# getCard(19333)
+# getCard(6264, True)
 
 #刷钱+资源(木头+钻石)
-getUpLevel(219, 2500)
+getUpLevel(4000, 2500)

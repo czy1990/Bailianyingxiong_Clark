@@ -61,7 +61,7 @@ GoHomeY_Pad = 85
 GoHomeX = 90
 GoHomeY = 90
 
-GoHomeTimer_Pad = 9
+GoHomeTimer_Pad = 7
 GoHomeTimer = 9
 
 
@@ -173,9 +173,17 @@ def currentTime():
     formatted_time = current_time.strftime("%Y-%m-%d %H:%M:%S")
     return formatted_time
 
+
 def currentTimerNow():
     return datetime.datetime.now()
+
 
 def formatTimer(formatT):
     local_time_tuple = time.localtime(formatT)
     return time.strftime('%Y-%m-%d %H:%M:%S', local_time_tuple)
+
+
+def screenshot(currentNumber=0):
+    screenshot_path = context.screenshot('screen' + currentNumber.__str__() + '.png')
+    print(f'Screenshot saved to {screenshot_path}')
+    waitTimer(2)
