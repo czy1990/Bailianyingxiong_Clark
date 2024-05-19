@@ -76,7 +76,7 @@ def click7燃烧平原():
 # 大目录-------end-------
 # 大目录-------end-------
 # 子目录-------start-------
-clickSubWaitTimer_Pad = 7
+clickSubWaitTimer_Pad = 8
 clickSubWaitTimer = 9
 
 

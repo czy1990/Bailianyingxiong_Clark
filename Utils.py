@@ -61,11 +61,11 @@ GoHomeY_Pad = 85
 GoHomeX = 90
 GoHomeY = 90
 
-GoHomeTimer_Pad = 7
+GoHomeTimer_Pad = 8
 GoHomeTimer = 9
 
 
-def clickGoHome():
+def clickGoHome(t_pad=GoHomeTimer_Pad):
     # print("回城")
 
     if isPad:
@@ -75,7 +75,7 @@ def clickGoHome():
 
     # 等9秒
     if isPad:
-        waitTimer(GoHomeTimer_Pad)
+        waitTimer(t_pad)
     else:
         waitTimer(GoHomeTimer)
 

@@ -288,3 +288,18 @@ def move51王座大厅Wood():
     moveRight()
     waitTimer(timer51)
     u.clickGoHome_确认()
+
+def click竞技场(numBer=3):
+    # 用法: click竞技场(10)
+    count = 0
+    while count < numBer:
+        count += 1
+        print("-----" + count.__str__() + "-1-u.click_point(80, 66)")
+        u.click_point(80, 66)
+        u.waitTimer(8)
+        print("" + count.__str__() + "-2-u.moveRightHalf()")
+        u.moveRightHalf()
+        u.waitTimer(13)
+        print("" + count.__str__() + "-3-u.click_point(80, 66)")
+        u.click_point(80, 66)
+        u.waitTimer(5)

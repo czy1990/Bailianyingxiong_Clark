@@ -62,6 +62,22 @@ timer12 = 3
 
 
 # ---------------------
+
+def move11打羊Monster():
+    print("move11打羊Monster")
+    moveRightUp()
+    moveRightUp()
+    moveRightUp()
+    moveRightHalf()
+    moveRightUp()
+    moveRightUp()
+    moveLeftUp()
+    moveLeftUp()
+    waitTimer(2.5)
+    u.clickGoHome(4)
+    move51王座大厅Refresh()
+
+
 def move12教堂山谷Boss():
     print("move12教堂山谷Boss")
     clickItem.click12教堂山谷()

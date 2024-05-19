@@ -45,12 +45,13 @@ def getUpLevel(wood=4000, diamond=2500, hours=1000, minutes=0):
             upBoss()
         # 更新运行时间
         start_time = time.time()
+
         # 第goHomeNumber次回家
-        goHomeNumber = 40
+        goHomeNumber = 25
         goHomeCount = (count % goHomeNumber)
         isGoHome = goHomeCount == 0
-        print("goHomeCount" + goHomeCount.__str__() + ",isGoHome: +" + isGoHome.__str__())
         if isGoHome:
+            print("goHomeCount" + goHomeCount.__str__() + ",isGoHome: " + isGoHome.__str__())
             u.clickGoHome_确认()
 
 
@@ -90,6 +91,19 @@ def getCard(money, max3X=False):
         clickItem.clickCardAbandon()
 
 
+def getMonster():
+    count = 0
+    print("------getMonster 起始时间" + u.currentTime())
+    ctimer = u.currentTimerNow()
+
+    while True:
+        moveBoss.move11打羊Monster()
+        count += 1
+        timerDiff = u.currentTimerNow() - ctimer
+        print("------当前次数:" + str(count) + ",当前时间:" + u.currentTime() + ",运行时间:" + timerDiff.__str__())
+
+
+
 def upBoss():
     print("upBoss")
     # 0:02:05 50金币版本 大致一小时
@@ -101,27 +115,15 @@ def upBoss():
     moveBoss.move51王座大厅Refresh_NO_Home()
 
 
-def click竞技场(numBer=3):
-    # 用法: click竞技场(10)
-    count = 0
-    while count < numBer:
-        count += 1
-        print("-----" + count.__str__() + "-1-u.click_point(80, 66)")
-        u.click_point(80, 66)
-        u.waitTimer(8)
-        print("" + count.__str__() + "-2-u.moveRightHalf()")
-        u.moveRightHalf()
-        u.waitTimer(13)
-        print("" + count.__str__() + "-3-u.click_point(80, 66)")
-        u.click_point(80, 66)
-        u.waitTimer(5)
-
-
 # 竞技场(次数)  慎用, 绿钻
-# click竞技场()
+# moveResource.click竞技场()
 
-# 金币抽卡
-# getCard(6264, True)
+# 金币抽卡 True 代表3倍抽
+# getCard(36601, True)
 
 #刷钱+资源(木头+钻石)
-getUpLevel(4000, 2500)
+# getUpLevel(1248, 2500)
+
+# 刷图鉴
+getMonster()
+# moveBoss.move11打羊Monster()
