@@ -87,7 +87,7 @@ def getCard(money, max3X=False):
             clickItem.click3x()
 
         clickItem.clickCardMoney()
-        u.screenshot(count)
+        # u.screenshot(count)
         clickItem.clickCardAbandon()
 
 
@@ -101,7 +101,6 @@ def getMonster():
         count += 1
         timerDiff = u.currentTimerNow() - ctimer
         print("------当前次数:" + str(count) + ",当前时间:" + u.currentTime() + ",运行时间:" + timerDiff.__str__())
-
 
 
 def upBoss():
@@ -119,11 +118,13 @@ def upBoss():
 # moveResource.click竞技场()
 
 # 金币抽卡 True 代表3倍抽
-# getCard(36601, True)
+# getCard(38591, True)
 
 #刷钱+资源(木头+钻石)
-# getUpLevel(1248, 2500)
+getUpLevel(4000, 2500)
+#
+# # 刷图鉴
+# getMonster()
 
-# 刷图鉴
-getMonster()
-# moveBoss.move11打羊Monster()
+
+

@@ -65,6 +65,7 @@ timer12 = 3
 
 def move11打羊Monster():
     print("move11打羊Monster")
+    waitTimer(2)
     moveRightUp()
     moveRightUp()
     moveRightUp()
@@ -73,9 +74,29 @@ def move11打羊Monster():
     moveRightUp()
     moveLeftUp()
     moveLeftUp()
-    waitTimer(2.5)
+    waitTimer(2)
+    #外加胖虎
+    # moveRight()
+    # moveRightUp()
+    # moveRight()
+    # moveRight()
+    # moveRightUp()
+    # moveRight()
+    # moveRightUp()
+    # moveRight()
+    # moveRight()
+    #
+    # moveRightUp()
+    # moveRightUp()
+    # moveRight()
+    # moveRight()
+    # moveRight()
+    # moveRightUp()
+    # moveRight()
+    # waitTimer(2.5)
+    # 刷新
     u.clickGoHome(4)
-    move51王座大厅Refresh()
+    # move51王座大厅Refresh()
 
 
 def move12教堂山谷Boss():
@@ -112,7 +133,10 @@ def move21贫瘠营地Boss():
     moveLeft()
     # u.clickGoHome()
 
+
 timer21 = 2
+
+
 def move22双峰山谷Boss():
     print("move21贫瘠营地Boss")
     clickItem.click22双峰山谷()
@@ -129,6 +153,7 @@ def move22双峰山谷Boss():
     moveUpHalf()
     waitTimer(timer21)
     u.clickGoHome()
+
 
 timer31 = 3
 
@@ -154,6 +179,7 @@ def move31污染哨站Boss():
     moveDown()
     waitTimer(timer31)
     u.clickGoHome()
+
 
 timer32 = 3
 
@@ -194,6 +220,7 @@ def move32腐烂沼泽Boss2():
     moveLeft()
     waitTimer(timer322)
     u.clickGoHome()
+
 
 timer33 = 2
 
@@ -246,6 +273,7 @@ def move41魔力之环Boss1():
 
 timer41 = 5
 
+
 def move41魔力之环Boss2():
     print("move41魔力之环Boss1")
     clickItem.click41魔力之环()
@@ -261,6 +289,7 @@ def move41魔力之环Boss2():
     moveUp()
     moveUp()
     # u.clickGoHome()
+
 
 timer42 = 6
 
@@ -290,7 +319,10 @@ def move42北风营地Boss():
     waitTimer(timer42)
     u.clickGoHome()
 
+
 timer52 = 10
+
+
 def move52魔力回廊Boss_Refresh():
     print("move52魔力回廊Boss_Refresh")
     clickItem.click52魔力回廊()
@@ -311,6 +343,116 @@ def move51王座大厅Refresh():
     print("move51王座大厅Refresh")
     clickItem.move51王座大厅Refresh()
 
+
 def move51王座大厅Refresh_NO_Home():
     print("move51王座大厅Refresh_NO_Home")
     clickItem.click51王座大厅Refresh_NO_Home()
+
+timer61 = 2
+def move61寂静山谷Monster():
+    print("move61寂静山谷Monster")
+    clickItem.click61寂静山谷()
+    moveRightDown()
+    moveDown()
+    moveRightDown()
+    moveDown()
+    moveDown()
+    moveDown()
+    moveDown()
+    waitTimer(timer61)
+
+    moveRight()
+    moveRightDown()
+    moveRight()
+    moveRight()
+    moveRightUp()
+    waitTimer(timer61)
+
+    moveRightDown()
+    moveRight()
+    moveRightDown()
+    moveRight()
+    waitTimer(timer61)
+    u.clickGoHome()
+
+
+timer62 = 2
+def move62幽影墓园Monster():
+    print("move62幽影墓园Monster")
+    # clickItem.click62幽影墓园()
+    moveRightUp()
+    moveRight()
+    waitTimer(timer62)
+
+    moveUp()
+    moveRightUp()
+    moveRightUp()
+    waitTimer(timer62)
+
+    moveLeft()
+    moveLeft()
+    moveLeft()
+    moveLeftDown()
+    moveLeftDown()
+    moveLeft()
+    waitTimer(timer62)
+
+    moveUp()
+    moveUp()
+    moveLeft()
+    waitTimer(timer62)
+    moveUp()
+    moveRight()
+
+    moveRightUp()
+    moveUp()
+    moveUp()
+    waitTimer(timer62)
+
+    moveLeft()
+    moveLeft()
+    moveLeftUp()
+    waitTimer(timer62)
+    u.clickGoHome()
+
+
+
+
+timer63 = 2
+
+
+def move63哀嚎营地Monster():
+    print("move52魔力回廊Boss_Refresh")
+    clickItem.click63哀嚎营地()
+    moveRightDown()
+    moveRightDown()
+    moveLeft()
+    moveLeft()
+    # waitTimer(timer63)
+    moveLeftDown()
+    moveLeftDown()
+    moveLeft()
+    moveLeft()
+    moveDown()
+    # waitTimer(timer63)
+
+    moveDown()
+    moveRight()
+    moveRight()
+    moveRight()
+    moveRight()
+    moveRight()
+    moveRightDown()
+    waitTimer(timer63)
+
+    moveRight()
+    moveRightUp()
+    moveRightUp()
+    moveRight()
+    waitTimer(timer63)
+
+    moveRightDown()
+    moveRight()
+    moveRightDown()
+    waitTimer(timer63)
+    u.clickGoHome()

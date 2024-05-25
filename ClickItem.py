@@ -203,6 +203,11 @@ def click61寂静山谷():
     click6幽魂之地()
     click子条目1()
 
+def click62幽影墓园():
+    print("click_6幽魂之地_2幽影墓园")
+    u.click传送阵()
+    click6幽魂之地()
+    click子条目2()
 
 def click63哀嚎营地():
     print("click_6幽魂之地_3哀嚎营地")
@@ -212,7 +217,7 @@ def click63哀嚎营地():
 
 
 def click72炽热哨站():
-    print("click_7燃烧平原_2哨站")
+    print("click_7燃烧平原_2炽热哨站")
     u.click传送阵()
     click7燃烧平原()
     click子条目2()
