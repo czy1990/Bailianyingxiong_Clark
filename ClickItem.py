@@ -223,16 +223,16 @@ def click72炽热哨站():
     click子条目2()
 
 
-def clickCardMoney():
+def clickCardMoney(timer=8):
     # print("click_Card_Money")
     u.click_point(50, 67)
-    u.waitTimer(8)
+    u.waitTimer(timer)
 
 def click3x():
     u.click_point(80,60)
     u.waitTimer(1)
 
-def clickCardAbandon():
+def clickCardAbandon(timer=4):
     # print("click_Card_Abandon")
     u.click_point(50, 76)
-    u.waitTimer(4)
+    u.waitTimer(timer)

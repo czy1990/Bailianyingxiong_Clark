@@ -5,6 +5,7 @@ import MoveBoss as moveBoss
 import Utils as u
 import ClickItem as clickItem
 import MoveResource as moveResource
+import MoveLevel as moveLevel
 
 # 通过IP连接
 # -------------------------------------------------
@@ -14,7 +15,7 @@ import MoveResource as moveResource
 u.init(True)
 
 
-def getUpLevel(wood=4000, diamond=2500, hours=1000, minutes=0):
+def getUpLevel(wood=5000, diamond=2500, hours=1000, minutes=0):
     count = 0
     # 运行时间
     print("------getUpLevel 起始时间" + u.currentTime())
@@ -43,6 +44,8 @@ def getUpLevel(wood=4000, diamond=2500, hours=1000, minutes=0):
             moveResource.move51王座大厅Wood()
         else:
             upBoss()
+            # moveResource.move51王座大厅Wood()
+           # moveLevel.move72制热哨站UpLevel()
         # 更新运行时间
         start_time = time.time()
 
@@ -86,7 +89,7 @@ def getCard(money, max3X=False):
         if max3X:
             clickItem.click3x()
 
-        clickItem.clickCardMoney()
+        clickItem.clickCardMoney(5)
         # u.screenshot(count)
         clickItem.clickCardAbandon()
 
@@ -115,16 +118,13 @@ def upBoss():
 
 
 # 竞技场(次数)  慎用, 绿钻
-# moveResource.click竞技场()
+#moveResource.click竞技场(80)
 
 # 金币抽卡 True 代表3倍抽
-# getCard(38591, True)
+#getCard(113098, True)
 
 #刷钱+资源(木头+钻石)
-getUpLevel(4000, 2500)
+getUpLevel(5000, 2500)
 #
 # # 刷图鉴
 # getMonster()
-
-
-
