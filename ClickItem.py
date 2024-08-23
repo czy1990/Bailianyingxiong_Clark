@@ -72,6 +72,13 @@ def click7燃烧平原():
     else:
         u.waitTimer(clickWaitTimer)
 
+def click8黑石堡垒():
+    u.click_point(30, 73)
+    # 等1秒
+    if u.isPad:
+        u.waitTimer(clickWaitTimer_Pad)
+    else:
+        u.waitTimer(clickWaitTimer)
 
 # 大目录-------end-------
 # 大目录-------end-------
@@ -222,6 +229,11 @@ def click72炽热哨站():
     click7燃烧平原()
     click子条目2()
 
+def click82大厅楼道():
+    print("click_8燃烧平原_2大厅楼道")
+    u.click传送阵()
+    click8黑石堡垒()
+    click子条目2()
 
 def clickCardMoney(timer=8):
     # print("click_Card_Money")

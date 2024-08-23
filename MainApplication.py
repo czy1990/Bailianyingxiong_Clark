@@ -43,7 +43,8 @@ def getUpLevel(wood=5000, diamond=2500, hours=1000, minutes=0):
         elif count <= woodCount:
             moveResource.move51王座大厅Wood()
         else:
-            upBoss()
+            # upBoss()
+            upBoss_2()
             # moveResource.move51王座大厅Wood()
            # moveLevel.move72制热哨站UpLevel()
         # 更新运行时间
@@ -67,7 +68,8 @@ def getUpBoss():
         timerDiff = u.currentTimerNow() - ctimer
         print("------循环次数:" + str(count) + ",当前时间:" + u.currentTime() + ",运行时间:" + timerDiff.__str__())
 
-        upBoss()
+        # upBoss()
+        upBoss_2()
 
 
 def getCard(money, max3X=False):
@@ -116,15 +118,31 @@ def upBoss():
     moveBoss.move33寒风营地Boss()  # 10
     moveBoss.move51王座大厅Refresh_NO_Home()
 
+def upBoss_2():
+    print("upBoss_2_82大厅楼道Boss")
+    # 0:02:05 50金币版本 大致一小时
+    u.waitTimer(3)
+    # moveBoss.move21贫瘠营地Boss()  # 10
+    # moveBoss.move12教堂山谷Boss()  # 10
+    # moveBoss.move31污染哨站Boss()  # 20
+    # moveBoss.move33寒风营地Boss()  # 10
+    moveBoss.move82大厅楼道Boss()
+
 
 # 竞技场(次数)  慎用, 绿钻
-#moveResource.click竞技场(80)
+#moveResource.click竞技场(20)
 
 # 金币抽卡 True 代表3倍抽
-#getCard(113098, True)
+# getCard(6463, False)
 
 #刷钱+资源(木头+钻石)
 getUpLevel(5000, 2500)
+
+# 无限循环
+# while True:
+#     u.waitTimer(0.2)
+#     u.click_point(55, 80)
+
 #
 # # 刷图鉴
 # getMonster()

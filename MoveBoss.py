@@ -456,3 +456,36 @@ def move63哀嚎营地Monster():
     moveRightDown()
     waitTimer(timer63)
     u.clickGoHome()
+
+def move82大厅楼道Boss():
+    print("move82大厅楼道Boss")
+    clickItem.click82大厅楼道()
+    u.waitTimer(3)
+    moveDown()
+    moveDown()
+    moveLeft()
+
+    moveLeft()
+    moveDown()
+    moveDown()
+    # 第1个BOSS 结束
+    u.waitTimer(3)
+
+    moveLeft()
+    moveDown()
+    moveLeft()
+    # 第2个BOSS 结束
+    u.waitTimer(3)
+
+    moveLeft()
+    moveLeft()
+    moveUp()
+    # 第3个BOSS 结束
+    u.waitTimer(3)
+
+    moveUp()
+    moveUpHalf()
+    # 第4个BOSS 结束
+    u.waitTimer(3)
+
+    u.clickGoHome_确认()
