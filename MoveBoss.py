@@ -474,18 +474,19 @@ def move82大厅楼道Boss():
     moveLeft()
     moveDown()
     moveLeft()
+    moveDownHalf()
     # 第2个BOSS 结束
     u.waitTimer(3)
 
     moveLeft()
     moveLeft()
     moveUp()
+    moveUpHalf()
     # 第3个BOSS 结束
     u.waitTimer(3)
 
     moveUp()
-    moveUpHalf()
     # 第4个BOSS 结束
-    u.waitTimer(3)
+    u.waitTimer(2)
 
     u.clickGoHome_确认()

@@ -7,7 +7,7 @@ clickWaitTimer = 2
 # 大目录-------start-------
 def click1前哨平原():
     # print("click1前哨平原")
-    u.click_point(30, 20)
+    u.click_point(30, 25)
     # 等1秒
     if u.isPad:
         u.waitTimer(clickWaitTimer_Pad)
@@ -17,7 +17,7 @@ def click1前哨平原():
 
 def click2荒芜之地():
     # print("click2荒芜之地")
-    u.click_point(30, 28)
+    u.click_point(30, 33)
     # 等1秒
     if u.isPad:
         u.waitTimer(clickWaitTimer_Pad)
@@ -27,13 +27,16 @@ def click2荒芜之地():
 
 def click3污染之林():
     # print("click3污染之林")
-    u.click_point(30, 35)
+    u.click_point(30, 37)
     # 等1秒
     if u.isPad:
         u.waitTimer(clickWaitTimer_Pad)
     else:
         u.waitTimer(clickWaitTimer)
 
+def click3熔火三层():
+    # print("click3污染之林")
+    click3污染之林()
 
 def click4严寒地带():
     # print("click4严寒地带")
@@ -47,7 +50,7 @@ def click4严寒地带():
 
 def click5冰冠堡垒():
     # print("click5冰冠堡垒")
-    u.click_point(30, 52)
+    u.click_point(30, 50)
     # 等1秒
     if u.isPad:
         u.waitTimer(clickWaitTimer_Pad)
@@ -56,7 +59,7 @@ def click5冰冠堡垒():
 
 
 def click6幽魂之地():
-    u.click_point(30, 60)
+    u.click_point(30, 55)
     # 等1秒
     if u.isPad:
         u.waitTimer(clickWaitTimer_Pad)
@@ -65,7 +68,7 @@ def click6幽魂之地():
 
 
 def click7燃烧平原():
-    u.click_point(30, 66)
+    u.click_point(30, 63)
     # 等1秒
     if u.isPad:
         u.waitTimer(clickWaitTimer_Pad)
@@ -73,12 +76,20 @@ def click7燃烧平原():
         u.waitTimer(clickWaitTimer)
 
 def click8黑石堡垒():
-    u.click_point(30, 73)
+    u.click_point(30, 68)
     # 等1秒
     if u.isPad:
         u.waitTimer(clickWaitTimer_Pad)
     else:
         u.waitTimer(clickWaitTimer)
+
+def click2_2无尽深渊():
+    u.click_point(70, 83)
+    # 等1秒
+    if u.isPad:
+        u.waitTimer(clickWaitTimer_Pad)
+    else:
+        u.waitTimer(1)
 
 # 大目录-------end-------
 # 大目录-------end-------
@@ -88,7 +99,7 @@ clickSubWaitTimer = 9
 
 
 def click子条目1():
-    u.click_point(70, 20)
+    u.click_point(70, 26)
     # 等6秒
     if u.isPad:
         u.waitTimer(clickSubWaitTimer_Pad)
@@ -97,7 +108,7 @@ def click子条目1():
 
 
 def click子条目2():
-    u.click_point(70, 35)
+    u.click_point(70, 36)
     # 等6秒
     if u.isPad:
         u.waitTimer(clickSubWaitTimer_Pad)
@@ -106,13 +117,28 @@ def click子条目2():
 
 
 def click子条目3():
-    u.click_point(70, 43)
+    u.click_point(70, 45)
     # 等6秒
     if u.isPad:
         u.waitTimer(clickSubWaitTimer_Pad)
     else:
         u.waitTimer(clickSubWaitTimer)
 
+def click子条目4():
+    u.click_point(70, 55)
+    # 等6秒
+    if u.isPad:
+        u.waitTimer(clickSubWaitTimer_Pad)
+    else:
+        u.waitTimer(clickSubWaitTimer)
+
+def click子条目5():
+    u.click_point(70, 65)
+    # 等6秒
+    if u.isPad:
+        u.waitTimer(clickSubWaitTimer_Pad)
+    else:
+        u.waitTimer(clickSubWaitTimer)
 
 # 子目录-------end-------
 def click12教堂山谷():
@@ -235,16 +261,25 @@ def click82大厅楼道():
     click8黑石堡垒()
     click子条目2()
 
+def click113熔火三层区域五():
+    print("click_11熔火三层_区域五层")
+    u.click传送阵()
+    click2_2无尽深渊()
+    click3熔火三层()
+    click子条目5()
+
+
+
 def clickCardMoney(timer=8):
     # print("click_Card_Money")
-    u.click_point(50, 67)
+    u.click_point(50, 75)
     u.waitTimer(timer)
 
 def click3x():
-    u.click_point(80,60)
+    u.click_point(73, 70)
     u.waitTimer(1)
 
 def clickCardAbandon(timer=4):
     # print("click_Card_Abandon")
-    u.click_point(50, 76)
+    u.click_point(50, 82)
     u.waitTimer(timer)

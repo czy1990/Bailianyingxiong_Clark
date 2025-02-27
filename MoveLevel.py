@@ -434,3 +434,71 @@ def move72制热哨站UpLevel():
     waitTimer(timer72)
     waitTimer(timer72)
     u.clickGoHome()
+
+def move113熔火三层区域3UpLevel():
+    print("move113熔火三层区域3UpLevel")
+    clickItem.click113熔火三层区域五()
+    u.waitTimer(3)
+
+    moveDown()
+    moveLeft()
+    moveDown()
+    moveLeft()
+    u.waitTimer(2)
+
+    moveDown()
+    moveLeft()
+    moveDown()
+    u.waitTimer(2)
+
+    moveDown()
+    moveRight()
+    moveRightDown()
+    moveRightDown()
+    u.waitTimer(2)
+    #
+    moveLeft()
+    moveLeftUp()
+    moveLeft()
+    moveLeft()
+    moveLeftUp()
+    u.waitTimer(2)
+
+    moveLeft()
+    moveLeft()
+    moveLeft()
+    u.waitTimer(2)
+
+    moveLeftDown()
+    moveLeftDown()
+    moveLeftDown()
+    u.waitTimer(2)
+
+    moveUp()
+    moveLeft()
+    moveUp()
+    moveUp()
+    moveUp()
+    u.waitTimer(2)
+
+    moveUp()
+    moveUp()
+    moveUp()
+    moveRight()
+    moveRight()
+    u.waitTimer(2)
+
+    moveRight()
+    moveRight()
+    moveRight()
+
+    # moveRight()
+    # moveRight()
+    # moveRightUp()
+    # moveRightUp()
+    # moveRight()
+    # moveRightDown()
+
+    # #回家
+    u.waitTimer(2)
+    u.clickGoHome_确认()

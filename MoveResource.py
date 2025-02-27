@@ -137,7 +137,7 @@ def move42寒风营地Diamond():
 
 
 def move42寒风营地DiamondCount(currentNumber):
-    count = (2500 - currentNumber) / 60
+    count = (3500 - currentNumber) / 60
     print("move42寒风营地DiamondCount: " + count.__str__())
     return count
 
@@ -295,11 +295,11 @@ def click竞技场(numBer=3):
     while count < numBer:
         count += 1
         print("-----" + count.__str__() + "-1-u.click_point(80, 66)")
-        u.click_point(80, 66)
+        u.click_point(80, 75)
         u.waitTimer(8)
-        print("" + count.__str__() + "-2-u.moveRightHalf()")
-        u.moveRightHalf()
-        u.waitTimer(13)
+        # print("" + count.__str__() + "-2-u.moveRightHalf()")
+        # u.moveRightHalf()
+        u.waitTimer(10)
         print("" + count.__str__() + "-3-u.click_point(80, 66)")
-        u.click_point(80, 66)
+        u.click_point(80, 75)
         u.waitTimer(5)
